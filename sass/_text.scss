@@ -1,0 +1,71 @@
+h1,h2,h3,h4{
+    font-family: 'HammersmithOne Regular', serif;
+    font-weight:bold;
+}
+h1{
+    font-family: roboto slab;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 60px;
+    text-transform: uppercase;
+    @include breakpoint(small){
+        font-size:26px;
+    }
+}
+h2{
+    font-family: roboto slab;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 31px;
+    text-transform: none;
+}
+h4{
+    font-size:14px;
+    color:#fff;
+}
+a{
+    text-decoration:none;
+    color:#716F73;
+}
+a:hover,a.active,a.active-trail{
+    color:$red !important;
+    -webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+#first-time{
+    display:none;
+}
+p{
+    padding: 10px 0;
+}
+.field-item{
+        ul{
+                list-style:disc;
+                margin:10px 30px;
+                li{
+                        padding:3px 10px;
+                }
+        }
+        
+}
+strong{
+    font-weight:bold !important;
+}
+em{
+    font-style:italic !important;  
+}
+table {
+    font-size: 14px;
+}
+
+th {
+    background: #efedea;
+    padding: 1px;
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px !important;
+    color: #000;
+}

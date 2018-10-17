@@ -1,0 +1,1000 @@
+   24  cp fix_web_perms.sh fix_favicon.sh
+   25  mv /home/ad.ciw.edu/sbeavan/favicon.ico /root/ciw_favicon.ico
+   26  vi fix_favicon.sh 
+   27  ./fix_favicon.sh 
+   28  rsync -av /root/ciw_favicon.ico /srv/Web/Drupal7/board.carnegiescience.edu/misc/favicon.ico 
+   29  screen -ls
+   30  exit
+   31  screen -R
+   32  screen -R
+   33  screen -d -R
+   34  screen -ls
+   35  screen -d -R
+   36  screen -ls
+   37  screen -R
+   38  su mkamuiru
+   39  clear
+   40  sync
+   41  yum -y update
+   42  clear
+   43  cd /srv/Web/Drupal6
+   44  ls
+   45  ls -larth
+   46  du -sh *
+   47  grep firewall /root/history/*
+   48  rsync -av /etc/fail2ban/ root@web3.lmkte.com:/etc/fail2ban/
+   49   fail2ban-client status sshd
+   50  screen -R
+   51  cd /backups/
+   52  ls
+   53  du -sh *
+   54  shutdown -h now
+   55  clear
+   56  lvdisplay
+   57  pvdisplay
+   58  lvdisplay /dev/sdb1 
+   59  lvdisplay hq-web3_backups
+   60  grep extend /root/history/20150*
+   61  lvextend -L +25G /dev/mapper/hq--web3_backups-backups 
+   62  df -h
+   63  mount
+   64  mount | grep backup
+   65  xfs_growfs /dev/mapper/hq--web3_backups-backups 
+   66  df -h
+   67  cd /backups/
+   68  ls
+   69  clear
+   70  du -sh *
+   71  cd /srv/
+   72  ls
+   73  cd Web/Static_Html/
+   74  ls
+   75  cd publicationsonline.carnegiescience.edu/
+   76  ls
+   77  cd first_light_case/
+   78  ls -larth
+   79  getfacl horn/
+   80  setfacl -R -m user:thorn:rwx /srv/Web/Static_Html/publicationsonline.carnegiescience.edu/first_light_case/horn
+   81  setfacl -R -d -m user:thorn:rwx /srv/Web/Static_Html/publicationsonline.carnegiescience.edu/first_light_case/horn
+   82  getfacl horn/
+   83  su thorn
+   84  cd /srv/Web/Static_Html/publicationsonline.carnegiescience.edu/first_light_case/horn/
+   85  vi .htaccess
+   86  screen -ls
+   87  screen
+   88  cd /srv/Web/Drupal7/carnegiescience.edu/sites/default/files
+   89  cd ..
+   90  ls -larth
+   91  groups jstrom
+   92  groups mkamuiru
+   93  setfac -R -d -m group:hqwebadmins:rwx /srv/Web/
+   94  setfacl -R -d -m group:hqwebadmins:rwx /srv/Web/
+   95  setfacl -R -m group:hqwebadmins:rwx /srv/Web/
+   96  cd /srv/Web/Drupal7/carnegiescience.edu/sites/default/files
+   97  getfac ../files/
+   98  getfacl ../files/
+   99  history | grep acl
+  100  history | grep acl >> /root/ACLS.log
+  101  vi /root/ACLS.log 
+  102  cd /root/
+  103  cd history/
+  104  grep acl *
+  105  grep acl * >> /root/ACLS.log 
+  106  vi /root/ACLS.log 
+  107  clear
+  108  sync
+  109  yum update
+  110  screen -ls
+  111  exit
+  112  cd /etc/httpd/vhost.d/
+  113  grep -i over *
+  114  vi publicationsonline_carnegiescience_edu.conf 
+  115  grep redirect *
+  116  grep -i redirect *
+  117  grep -i redirect ../includes/*
+  118  vi ../includes/ciw_edu_legacy_redirect.inc 
+  119  vi d7_carnegiescience_edu.conf 
+  120  systemctl restart httpd
+  121  vi .htaccess 
+  122  cat .htaccess 
+  123  shutdown -h now
+  124  cd bin
+  125  ls
+  126  cp fix_favicon.sh drush_updates.sh
+  127  vi drush_updates.sh 
+  128  ./drush_updates.sh 
+  129  vi drush_updates.sh 
+  130  ./drush_updates.sh 
+  131  df -h
+  132  screen -ls
+  133  screen 
+  134  cd /etc/pki/tls/
+  135  ls -larth digicert/
+  136  rsync -avP /etc/pki/tls/digicert/ sbeavan@web-west.ciw.edu:/home/sbeavan/digicert/
+  137  ssh sbeavan@web-west.ciw.edu
+  138  rsync -avP /etc/pki/tls/digicert/ sbeavan@web-west.ciw.edu:/Volumes/Web/Users/sbeavan/digicert/
+  139  rsync -avP /etc/pki/tls/digicert sbeavan@web-west.ciw.edu:/Volumes/Web/Users/sbeavan/
+  140  ssh sbeavan@web-west.ciw.edu
+  141  yum -y update
+  142  cd /srv/Web/
+  143  cd Drupal7
+  144  ls
+  145  mkdir plantgenome.carnegiescience.edu
+  146  ls -larth
+  147  chown root.apache plantgenome.carnegiescience.edu/
+  148  rsync -av /srv/Web/drupal_root_7/ plantgenome.carnegiescience.edu/
+  149  cd plantgenome.carnegiescience.edu/sites/
+  150  ls
+  151  rm -rf default/
+  152  pwd
+  153  ls -larth
+  154  chown -R root.root default
+  155  screen -ls
+  156  screen -R
+  157  screen -ls
+  158  screen -dR
+  159  cd /root/bin
+  160  ls
+  161  vi fix_web_perms.sh 
+  162  ./fix_web_perms.sh 
+  163  vi fix_web_perms.sh 
+  164  ./fix_web_perms.sh 
+  165  vi fix_web_perms.sh 
+  166  ./fix_web_perms.sh 
+  167  vi fix_web_perms.sh 
+  168  ./fix_web_perms.sh 
+  169  cd /root/bin
+  170  rsync drush_updates.sh sbeavan@web1.carnegiescience.edu:/home/sbeavan/
+  171  rsync drush_updates.sh sbeavan@web1.carnegiescience.edu:/home/sbeavan/bin/
+  172  rsync -av drush_updates.sh sbeavan@web1.carnegiescience.edu:/home/sbeavan/bin/
+  173  cd /etc/httpd/vhost.d/
+  174  ls
+  175  cp _d7_TEMPLATE_carnegiescience_edu.conf.template d7_plantgenome.carnegiescience.edu.conf
+  176  vi d7_plantgenome.carnegiescience.edu.conf
+  177  cd ../includes/
+  178  ls
+  179  cd sites/
+  180  ls
+  181  cp _d7_TEMPLATE_carnegiescience_edu.inc.template d7_plantgenome_carnegiescience_edu.inc
+  182  vi d7_plantgenome_carnegiescience_edu.inc
+  183  history | grep sed
+  184  sed -i.bak s/template/plantgenome/g d7_plantgenome_carnegiescience_edu.inc 
+  185  ls -larth
+  186  rm -rf d7_plantgenome_carnegiescience_edu.inc.bak
+  187  vi d7_plantgenome_carnegiescience_edu.inc
+  188  cd ../../vhost.d/
+  189  vi d7_plantgenome.carnegiescience.edu.conf 
+  190  vi _d7_TEMPLATE_carnegiescience_edu.conf.template 
+  191  systemctl restart httpd && systemctl status httpd
+  192  cp _d7_TEMPLATE_carnegiescience_edu.conf.template d7_hazen_carnegiescience_edu.conf
+  193  sed -i.bak s/template/hazen/g d7_hazen_carnegiescience_edu.conf_
+  194  sed -i.bak s/template/hazen/g d7_hazen_carnegiescience_edu.conf 
+  195  rm d7_hazen_carnegiescience_edu.conf.bak 
+  196  vi d7_hazen_carnegiescience_edu.conf
+  197  cd ../includes/sites/
+  198  cp _d7_TEMPLATE_carnegiescience_edu.inc.template d7_hazen_carnegiescience_edu.inc
+  199  sed -i.bak s/template/hazen/g d7_hazen_carnegiescience_edu.inc
+  200  rm d7_hazen_carnegiescience_edu.inc.bak 
+  201  vi d7_hazen_carnegiescience_edu.inc
+  202  systemctl restart httpd && systemctl status httpd
+  203  ls
+  204  vi d7_carnegiescience_edu.inc 
+  205  cd ../../vhost.d/
+  206  vi d7_carnegiescience_edu.conf 
+  207  vi d7_hazen_carnegiescience_edu.conf 
+  208  systemctl restart httpd
+  209  vi _d7_TEMPLATE_carnegiescience_edu.conf.template 
+  210  cp _d7_TEMPLATE_carnegiescience_edu.conf.template d7_dtm_carnegiescience_edu.conf
+  211  sed -i.bak s/template/dtm/g d7_dtm_carnegiescience_edu.conf
+  212  rm -rf d7_dtm_carnegiescience_edu.conf.bak 
+  213  cd ../includes/sites/
+  214  cp _d7_TEMPLATE_carnegiescience_edu.inc.template d7_dtm_carnegiescience_edu.inc
+  215  ls
+  216  sed -i.bak s/template/dtm/g d7_dtm_carnegiescience_edu.inc 
+  217  rm -rf d7_dtm_carnegiescience_edu.inc.bak 
+  218  vi d7_dtm_carnegiescience_edu.inc 
+  219  pwd
+  220  systemctl restart httpd && systemctl status httpd
+  221  fdisk /dev/sda
+  222  fdisk /dev/sda2
+  223  fdisk /dev/sda
+  224  pvdisplay
+  225  fdisk /dev/sdb
+  226  clear
+  227  pvdisplay
+  228  reboot
+  229  pvdisplay
+  230  pvresize
+  231  pvresize /dev/sdb1
+  232  pvresize /dev/sda2
+  233  pvdisplay
+  234  lvdisplay /dev/sdb1
+  235  lvdisplay 
+  236  lvresize -L +25G /dev/hq-web3_backups/backups
+  237  lvdisplay /dev/hq-web3_backups
+  238  xfs_growfs /dev/hq-web3_backups/backups
+  239  df -h
+  240  lvresize -L +15G /dev/mapper/System-Srv
+  241  xfs_growfs /dev/mapper/System-Srv
+  242  df -h
+  243  clear
+  244  sync
+  245  clear
+  246  grep pvcreate /root/history/*
+  247  pvdisplay
+  248  vi /root/history/20150421.root.hst
+  249  cd /etc/httpd/includes/sites/
+  250  vi d7_dtm_carnegiescience_edu.inc 
+  251  systemctl restart httpd && systemctl status httpd
+  252  vi d7_dtm_carnegiescience_edu.inc 
+  253  systemctl restart httpd && systemctl status httpd
+  254  clear
+  255  exit
+  256  cd /var/log
+  257  ls
+  258  ls -larth
+  259  tail lastlog 
+  260  tail messages
+  261  grep -i memory *
+  262  date
+  263  grep -i memory messages
+  264  cd /etc/sshd
+  265  cd /etc/ssh/
+  266  vi sshd_config 
+  267  groups macierno
+  268  systemctl restart winbind
+  269  systemctl restart winbind &&  systemctl status winbind
+  270  groups macierno
+  271  cd /srv/Web/
+  272  cd Drupal7/
+  273  ls
+  274  history | grep facl
+  275  setfacl -R -m -d group:dtmwebadmins:rwx /srv/Web/Drupal7/dtm.carnegiescience.edu/
+  276  setfacl -Rmd group:dtmwebadmins:rwx /srv/Web/Drupal7/dtm.carnegiescience.edu/
+  277  setfacl -Rdm group:dtmwebadmins:rwx /srv/Web/Drupal7/dtm.carnegiescience.edu/
+  278  setfacl -Rm group:dtmwebadmins:rwx /srv/Web/Drupal7/dtm.carnegiescience.edu/
+  279  getfacl /srv/Web/Drupal7/dtm.carnegiescience.edu/
+  280  su macierno
+  281  systemctl restart winbind
+  282  su rdienel
+  283  systemctl restart sshd
+  284  clear
+  285  df -h
+  286  cd /backups/
+  287  ls
+  288  cd hq-web3/
+  289  du -sh *
+  290  df -h
+  291  clear
+  292  pvdisplay
+  293  lvdisplay /dev/hq-web3_backups
+  294  clear
+  295  lvdisplay /dev/hq-web3_backups
+  296  pvdisplay
+  297  pvdisplay /dev/sdb1
+  298  lvdisplay /dev/hq-web3_backups
+  299  lvextend -L +50G /dev/hq-web3_backups/backups 
+  300  xfs_growfs /dev/hq-web3_backups/backups 
+  301  clear
+  302  sync
+  303  clear
+  304  df -h
+  305  clear
+  306  yum update
+  307  exit
+  308  clear
+  309  screen -ls
+  310  screen
+  311  clear
+  312  sync
+  313  yum update
+  314  cd bin
+  315  ls
+  316  clear
+  317  ls
+  318  ./drush_updates.sh 
+  319  vi drush_updates.sh 
+  320  cd /srv/Web/Drupal7/carnegiescience.edu/
+  321  drush -l http://carnegiescience.edu cc -y
+  322  drush -l http://carnegiescience.edu cc <1
+  323  drush -l http://carnegiescience.edu cc < echo 1
+  324  cd /root/bin
+  325  vi drush_updates.sh 
+  326  clear
+  327  sync
+  328  clear
+  329  cd /srv/
+  330  ls
+  331  df -h
+  332  cd Web/
+  333  ls
+  334  cd Drupal6/
+  335  ls
+  336  du sh *
+  337  cd ..
+  338  du -sh *
+  339  du -sh Drupal6
+  340  cd /etc/httpd/
+  341  ls
+  342  cd vhost.d/
+  343  ls
+  344  mkdir Drupal6
+  345  cd Drupal6/
+  346  pwd
+  347  cd ..
+  348  pwd
+  349  history | grep acl
+  350  setfacl -Rdm group:hqwebadmins:rwx /etc/httpd/vhost.d
+  351  setfacl -Rm group:hqwebadmins:rwx /etc/httpd/vhost.d
+  352  ls -larth
+  353  cd Drupal6/
+  354  ls
+  355  vi drupal_carnegiescience_edu.conf 
+  356  grep conf /etc/httpd/conf/*
+  357  vi /etc/httpd/conf/httpd.conf
+  358  cd ..
+  359  mkdir Drupal7
+  360  ls
+  361  mv d7* Drupal7
+  362  systemctl restart httpd
+  363  mkdir /srv/Web/Drupal6-OP/
+  364  setfacl -Rdm group:hqwebadmins:rwx /srv/Web/Drupal6-OP
+  365  setfacl -Rm group:hqwebadmins:rwx /srv/Web/Drupal6-OP
+  366  setfacl -Rm group:hqwebadmins:rwx /srv/Web/Drupal6
+  367  setfacl -Rdm group:hqwebadmins:rwx /srv/Web/Drupal6
+  368  cd Drupal6
+  369  ls
+  370  vi drupal_carnegiescience_edu.conf 
+  371  vi /etc/httpd/includes/drupal6.inc 
+  372  vi /etc/httpd/includes/drupal6-openpublish.inc 
+  373  systemctl restart httpd
+  374  systemctl status httpd
+  375  tcpdump src 50.90.39.153
+  376  tcpdump src ip 50.90.39.153
+  377  tcpdump src net 50.90.39.153
+  378  grep tcpdump /root/history/*
+  379  tcpdump -A src 50.90.39.153
+  380  tcpdump
+  381  yum update
+  382  tcpdump -A
+  383  ifconfig
+  384  mkdir /root/bin.web1/
+  385  cd /root/bin.web1/
+  386  ls
+  387  cp pullScada.sh ../bin/
+  388  crontab -e
+  389  vi ../bin/pullScada.sh 
+  390  sed -i.bak s/drupal-openpublish/Drupal-OP/g pullScada.sh 
+  391  vi ../bin/pullScada.sh 
+  392  sed -i.bak s\drupal-openpublish\Drupal-OP\g pullScada.sh 
+  393  history | grep sed
+  394  vi pullScada.sh
+  395  cp pullScada.sh ../bin/
+  396  cd ..
+  397  cd bin
+  398  ./pullScada.sh 
+  399  sed -i.bak s/srv\/Drupal-OP/srv\/Web\/Drupal6-OP/g pullScada.sh 
+  400  vi pullScada.sh
+  401  ./pullScada.sh 
+  402  sed -i.bak s/Drupal-OP/Drupal6-OP/g pullScada.sh 
+  403  ./pullScada.sh 
+  404  vi pullScada.sh
+  405  ./pullScada.sh 
+  406  clear
+  407  sync
+  408  screen -dR
+  409  tcpdump
+  410  yum install tcpdum*
+  411  systemctl restart network
+  412  tcpdump
+  413  ifconfig
+  414  tcpdump -i eno16780032
+  415  tcpdump -i eno16780032 port 389
+  416  screen -dR
+  417  cd /var/log/httpd/
+  418  ls -larth
+  419  ls -larth | grep hpcat
+  420  cd /srv/Web/Static_Html/
+  421  ls
+  422  mkdir bioeyes.org
+  423  cd bioeyes.org/
+  424  pwd
+  425  getfacl /srv/Web/Static_Html/bioeyes.org
+  426   history | grep people
+  427  clear
+  428  vi /etc/php.ini 
+  429  cd /etc/openldap/
+  430  grep -i tls *
+  431  vi ldap.conf 
+  432  systemctl openldap restart
+  433  cd /srv/Web/Drupal6-OP/sites/dpb.carnegiescience.edu/
+  434  ls
+  435  cd ..
+  436  ls -larth | egrep ^d.*$
+  437  ls
+  438  pwd
+  439  ln -s /srv/Web/Drupal6-OP/sites/hpcat.gl.ciw.edu openpublishhpcat.hq.carnegiescience.edu
+  440  ln -s /srv/Web/Drupal6-OP/sites/hpcat.gl.ciw.edu openpublishhpcat.carnegiescience.edu
+  441  cd /srv/Web/Static_Html/bioeyes.org/
+  442  ps -aux | grep -i http
+  443  kill 73460
+  444  ps -aux | grep -i http
+  445  exit
+  446  clear
+  447  screen -dR
+  448  yum -y update
+  449  screen -dR
+  450  clear
+  451  cd /srv/Web/
+  452  mkdir Drupal8
+  453  cd Drupal8
+  454  wget http://ftp.drupal.org/files/projects/drupal-8.0.0-beta10.tar.gz
+  455  tar zxvf drupal-8.0.0-beta10.tar.gz 
+  456  mv drupal-8.0.0-beta10 webdev8.carnegiescience.edu
+  457  cd ..
+  458  rsync -av Drupal8 sbeavan@hq-web4.carnegiescience.edu:/srv/Web/
+  459  rm -rf Drupal8
+  460  cd /etc/httpd/vhost.d/
+  461  ls
+  462  cd Drupal7
+  463  ls
+  464  cd ..
+  465  rsync -av Drupal7 sbeavan@hq-web4.carnegiescience.edu:/etc/httpd/vhost.d/
+  466  cd ../includes/
+  467  ls
+  468  rsync -av sites/ sbeavan@hq-web4.carnegiescience.edu:/etc/httpd/includes/
+  469  ssh sbeavan@master.carnegiescience.edu
+  470  cd /var/log/httpd/
+  471  tail -f case_carnegiescience.edu_error_log 
+  472  vi /srv/Web/Drupal6/.htaccess
+  473  tail -f case_carnegiescience.edu_error_log 
+  474  tail -f rentals_carnegiescience_edu_error.log 
+  475  cd /etc/httpd/includes/
+  476  ls -larth
+  477  vi admin_user_https.inc 
+  478  ls -larth
+  479  cat dpb_people_proxy.inc
+  480  cat security.inc 
+  481  clear
+  482  cat security.inc 
+  483  cat ssl-dpb.carnegiescience.inc 
+  484  clear
+  485  cd ..
+  486  cd vhost.d/
+  487  ls
+  488  cd Drupal6
+  489  mv drupal_dpb_openpublish.conf.hold drupal_dpb_openpublish.conf
+  490  systemctl restart httpd && systemctl status httpd
+  491  mv drupal_dpb_openpublish.conf drupal_dpb_openpublish.conf.hold
+  492  systemctl restart httpd && systemctl status httpd
+  493  journalctl -xn
+  494  mv drupal_dpb_openpublish.conf.hold drupal_dpb_openpublish.confclear
+  495  clear
+  496  ls -larth
+  497  mv drupal_dpb_openpublish.confclear drupal_dpb_openpublish.conf.hold
+  498  clear
+  499  mv drupal_dpb_openpublish.conf.hold drupal_dpb_openpublish.conf
+  500  systemctl restart httpd && journalctl -xn
+  501  mv drupal_dpb_openpublish.conf drupal_dpb_openpublish.conf.hold
+  502  journalctl -xn
+  503  ls -larth
+  504  mv drupal_dpb_openpublish.conf.hold drupal_dpb_openpublish.conf
+  505  systemctl restart httpd 
+  506  journalctl -xn
+  507  cd /srv/Web/Drupal7/it.carnegiescience.edu/
+  508  drush @sites up -y
+  509  clear
+  510  pwd
+  511  cd sites/all/modules/
+  512  ls
+  513  pwd
+  514  ls -larth
+  515  ls -larth | grep carn
+  516  getfacl ../modules/
+  517  groups sbeavan
+  518  ls -larth
+  519  cd ..
+  520  exit
+  521  screen -ls
+  522  screen -dR
+  523  cd /srv/Web/Drupal7/it.carnegiescience.edu/sites/all/modules
+  524  touch 1
+  525  rm 1
+  526  mkdir /srv/Web/Drupal7/it.carnegiescience.edu/sites/all/modules/carnegie_ad_ldap
+  527  clear
+  528  cd /srv/Web/Drupal7/carnegiescience.edu/sites/all/themes/carnegie/
+  529  ls
+  530  cd templates/
+  531  ls -l | grep eve
+  532  ls -la
+  533  grep -i event *
+  534  vi node.tpl.php 
+  535  grep -i regi *
+  536  vi node.tpl.php 
+  537  clear
+  538  screen -dR
+  539  crontab -e
+  540  /root/
+  541  /root/bin/pullScada.sh
+  542  screen -ls
+  543  screen -R
+  544  systemctl smbd restart
+  545  systemctl restart smbd
+  546  systemctl restart samba
+  547  systemctl restart sambad
+  548  systemctl restart smb
+  549   systemctl status smb
+  550  groups vary
+  551  vi /etc/ssh/sshd_config 
+  552  systemctl restart sshd
+  553  systemctl status sshd
+  554  systemctl restart sshd
+  555  systemctl status sshd
+  556  clear
+  557  cd /srv/Web/Static_Html/
+  558  ls
+  559  ls -larth
+  560  setfacl -Rdm group:bioeyesweb:rwx bioeyes.org
+  561  setfacl -Rm group:bioeyesweb:rwx bioeyes.org
+  562  su vary
+  563  ls -larth
+  564  chown -R root.root bioeyes.org
+  565  getfacl bioeyes.org
+  566  w
+  567  clear
+  568  sync/
+  569  sync
+  570  clear
+  571  w
+  572  ls -larth
+  573  cd bioeyes.org/
+  574  ls -larth
+  575  su vary
+  576  cd /srv/Web/Drupal8
+  577  ls
+  578  exit
+  579  cd /srv/Web/Drupal6/sites/
+  580  ls -larth
+  581  drush -l http://rentals.carnegiescience.edu cc
+  582  ls -larth
+  583  w
+  584  cd /srv/Web/
+  585  ls
+  586  mv drupal_root_7/ OLD_drupal_root_7
+  587  ls -larth
+  588  cd Drupal6
+  589  ls
+  590  cd sites/rentals.carnegiescience.edu/files/images/temp/
+  591  ls
+  592  ls -larth
+  593  pwd
+  594  cd /etc/httpd/vhost.d/Drupal6
+  595  ls
+  596  mv drupal_dpb_openpublish.conf.fuck drupal_dpb_openpublish.conf
+  597  systemctl restart httpd && systemctl status httpd
+  598  journalctl -xn
+  599  mv drupal_dpb_openpublish.conf drupal_dpb_openpublish.conf.hold
+  600  systemctl restart httpd && systemctl status httpd
+  601  vi drupal_dpb_openpublish.conf
+  602  vi drupal_dpb_openpublish.conf.hold 
+  603  ls -larth
+  604  vi drupal_openpublish_obs_carnegiescience_edu.conf
+  605  pwd
+  606  cd ..
+  607  vi web_redirects.conf
+  608  l
+  609  ls
+  610  cat postdocs.carnegiescience.edu.conf 
+  611  vi web_redirects.conf 
+  612  systemctl restart httpd && systemctl status httpd
+  613  vi web_redirects.conf 
+  614  systemctl restart httpd && systemctl status httpd
+  615  vi web_redirects.conf 
+  616  systemctl restart httpd && systemctl status httpd
+  617  journalctl -xn
+  618  mv web_redirects.conf web_redirects.conf.l
+  619  systemctl restart httpd && systemctl status httpd
+  620  vi web_redirects.conf.l 
+  621  mv web_redirects.conf.l web_redirects.conf
+  622  systemctl restart httpd && systemctl status httpd
+  623  ls -larth
+  624  cd Drupal7
+  625  vi d7_it_carnegiescience_edu.conf 
+  626  systemctl restart httpd
+  627  clear
+  628  sync
+  629  s -larth
+  630  ls -larth
+  631  co _d7_TEMPLATE_carnegiescience_edu.conf.template d7_planetsonearch_carnegiescience_edu.conf
+  632  cp _d7_TEMPLATE_carnegiescience_edu.conf.template d7_planetsonearch_carnegiescience_edu.conf
+  633  sed -i.bak s/template/planetsonearth/g d7_planetsonearch_carnegiescience_edu.conf 
+  634  mv d7_planetsonearch_carnegiescience_edu.conf d7_planetsonearth_carnegiescience_edu.conf
+  635  rm -rf *.bak
+  636  vi d7_planetsonearth_carnegiescience_edu.conf
+  637  cd ../../includes/sites/
+  638  ls
+  639  cp _d7_TEMPLATE_carnegiescience_edu.inc.template  d7_planetsonearth_carnegiescience_edu.inc
+  640  sed -i.back s/template/planetsonearth/g d7_planetsonearth_carnegiescience_edu.inc 
+  641  rm -rf *.back
+  642  vi d7_planetsonearth_carnegiescience_edu.inc
+  643  cd /srv/Web/Drupal7/
+  644  mkdir planetsonearth.carnegiescience.edu
+  645  rsync -av /srv/Web/OLD_drupal_root_7/ planetsonearth.carnegiescience.edu/
+  646  cd planetsonearth.carnegiescience.edu/
+  647  ls
+  648  cd sites/
+  649  ls
+  650  cd default/
+  651  pwd
+  652  systemctl restart httpd && systemctl status httpd
+  653  cd ..
+  654  cd ../carnegiescience.edu/
+  655  drush dl views_conditional
+  656  drush @sites en views_conditional
+  657  clear
+  658  cd ..
+  659  ls -larth
+  660  rsync -av /root/bin/ sbeavan@hq-web4.carnegiescience.edu:/home/ad.ciw.edu/sbeavan/root.bin/
+  661  crontab -e
+  662  yum update
+  663  clear
+  664  sync
+  665  exit
+  666  screen -ls
+  667  screen
+  668  rkhunter --propupd
+  669  clear
+  670  cd /srv/Web/Drupal6
+  671  ls
+  672  cd sites/
+  673  ls
+  674  cd ..
+  675  cd Drupal7
+  676  ls
+  677  cd cdac.carnegiescience.edu/
+  678  find ./ -name obj6geo3pg1p3.png
+  679  vi /etc/httpd/vhost.d/Drupal7/d7_cdac_carnegiescience_edu.conf 
+  680  vi /etc/httpd/includes/sites/d7_cdac_carnegiescience_edu.inc 
+  681  systemctl restart httpd
+  682  find ./ -name obj6geo3pg1p3.png
+  683  vi /etc/httpd/includes/sites/d7_cdac_carnegiescience_edu.inc 
+  684  systemctl restart httpd
+  685  vi /etc/httpd/includes/sites/d7_cdac_carnegiescience_edu.inc 
+  686  systemctl restart httpd
+  687  vi /etc/httpd/includes/sites/d7_cdac_carnegiescience_edu.inc 
+  688  authconfig-tui 
+  689  grep join /root/history/*
+  690  screen -ls
+  691  screen -R
+  692  cd /srv/Web/Drupal7
+  693  ls
+  694  du -sh carnegiescience.edu/
+  695  rsync -av /srv/Web/Drupal7/carnegiescience.edu sbeavan@hq-web4.carnegiescience.edu:/srv/Web/Drupal7/
+  696  du -sh carnegiescience.edu/
+  697  find carnegiescience.edu/ -name *.git*
+  698  screen -ls
+  699  screen -R
+  700  cd /srv/Web/Drupal7/carnegiescience.edu/
+  701  ls
+  702  cd sites/all/themes/
+  703  ls
+  704  mkdir /home/ad.ciw.edu/sbeavan/carnegie-theme-20150609
+  705  rsync -av ./carnegie/ /home/ad.ciw.edu/sbeavan/carnegie-theme-20150609/
+  706  cp /home/ad.ciw.edu/mkamuiru/carnegie.zip ./
+  707  mv carnegie old_carnegie
+  708  unzip carnegie.zip 
+  709  ls -larth
+  710  getfacl old_carnegie/
+  711  getfacl carnegie
+  712  rm -rf old_carnegie/
+  713  systemctl restart httpd
+  714  crontab -e
+  715  cd /srv/Web/Drupal6/sites/
+  716  ls
+  717  cd ..
+  718  ls
+  719  cd ..
+  720  ls
+  721  cd Drupal6-OP/sites/
+  722  ls
+  723  cd ls -larth
+  724  cd emb.carnegiescience.edu/
+  725  ls
+  726  vi google570fa7b7df36d8b7.html
+  727  mv google570fa7b7df36d8b7.html  /srv/Web/Static_Html/BLAH/
+  728  cd /srv/Web/Static_Html/BLAH/
+  729  ls
+  730  mv google570fa7b7df36d8b7.html ..
+  731  cd ..
+  732  ls
+  733  mkdir googleverify
+  734  mv google570fa7b7df36d8b7.html googleverify/
+  735  cd /etc/httpd/includes/
+  736  ls
+  737  cd sites/
+  738  ls
+  739  cd ../../vhost.d/
+  740  ls
+  741  cd Static_Html/
+  742  ls
+  743  cp html_bioeyes_org.conf html_googleverify.conf
+  744  vi html_googleverify.conf 
+  745  vi ../Drupal6/drupal_openpublish_emb_carnegiescience_edu.conf 
+  746  systemctl restart httpd
+  747  screen -ls
+  748  screen -R
+  749  screen -dR
+  750  systemctl restart ntpd
+  751  date
+  752  rsync -av /etc/php.ini  sbeavan@hq-web4.carnegiescience.edu:/home/ad.ciw.edu/sbeavan/
+  753  grep -i upload /etc/php.ini 
+  754  grep -i upload /etc/php.ini  | grep -i max
+  755  vi /etc/php.ini 
+  756  systemctl restart httpd
+  757  screen -dR
+  758  grep lvcreate /root/history/*
+  759  lvdisplay
+  760  lvdisplay | grep -i  backup
+  761  lvdisplay /dev/hq-web3_backups
+  762  clear
+  763  ls
+  764  cd Drupal7
+  765  pwd
+  766  rsync -av /etc/httpd/vhost.d/Drupal7/d7_carnegiescience_edu.conf sbeavan@hq-web4.carnegiescience.edu:/etc/httpd/vhost.d/Drupal7/
+  767  rsync -av /etc/httpd/includes/sites/d7_carnegiescience_edu.inc sbeavan@hq-web4.carnegiescience.edu:/etc/httpd/includes/sites/d7_carnegiescience_edu.inc
+  768  rsync -av /etc/httpd/includes/hq-static-data.inc sbeavan@hq-web4.carnegiescience.edu:/etc/httpd/includes/
+  769  ls
+  770  cd /srv/Web/Drupal7/carnegiescience.edu/sites/
+  771  ls -larth
+  772  cd /srv/Web/Static_Html/
+  773  ls -larth
+  774  cd googleverify/
+  775  ls -larth
+  776  vi index.html
+  777  screen -dR
+  778  clear
+  779  sync
+  780  screen -dR
+  781  cd /backups/
+  782  ls
+  783  exit
+  784  screen -dR
+  785  cd bin
+  786  ./drush_updates.sh 
+  787  vi /etc/ssh/sshd_config 
+  788  cd /srv/Web/Drupal6-OP/sites/dpb.ciw.edu/files/
+  789  ls -larth
+  790  ls -larth | grep zip
+  791  yum -y update
+  792  cd /srv/Web/Drupal7/dtdi.carnegiescience.edu/sites/default/files/
+  793  ls
+  794  rsync -av _old/ ./
+  795  ls -larth
+  796  ls -larth | grep -i steve
+  797  chmod -R 775 ../files/
+  798  ls -larth | grep -i olaw-phspol
+  799  mkdir /srv/tmp
+  800  chown root.apache /srv/tmp/
+  801  chmod 775 /srv/tmp/
+  802  pwd
+  803  cd ..
+  804  ls -larth
+  805  chown -R root.apache files
+  806  chown -R root.apache /srv/tmp
+  807  chmod -R 775 files
+  808  chmod -R 775 /srv/tmp
+  809  chown -R apache.apache /srv/tmp
+  810  chmod -R 775 /srv/tmp
+  811  cd files/
+  812  ls -larth | grep -i logo
+  813  ls -larth
+  814  rm -rf PRSpradling* spradling/ macpherson/ farber/
+  815  ls -l
+  816  rm -rf *.jpb *.gif
+  817  ls -l
+  818  rm -rf *.png
+  819  ls -larth
+  820  rm -rf scada/ han/ halpern/ genome/ Gateway_vectors_files/ labsafety/ lab-Nov.2014.jpg 
+  821  ls -l
+  822  mr -rf *.jpg
+  823  rm -rf *.jpg
+  824  rm -rf  media-icons/ imagecache/ imagefield_thumbs* parser_common_syndication_cache/ *.pdf simplepie* resize/ xmlsitemap/ video_embed_field_thumbnails/ pictures/ playlists/
+  825  ls
+  826  rm -rf feeds/ field/ home-page-feature/ grantassignment/ gateway_downloads/ sites/ styles/
+  827  cp _old/emb-logo-lg-1_0.png ./
+  828  drush @sites dl plupload multiform
+  829  drush @sites en plupload multiform
+  830  pwd
+  831  ls
+  832  cd DTDI_Gallery/
+  833  pwd
+  834  ls -larth
+  835  cd ..
+  836  ls -larth
+  837  rm -rf CS_logo-red_250_0.jpg 
+  838  screen -dR
+  839  cd /etc/httpd/vhost.d/
+  840  vi dcstemnetwork_redirect.conf
+  841  systemctl restarat httpd
+  842  systemctl restart httpd
+  843  journalctl -xn
+  844  ls
+  845  vi postdocs.carnegiescience.edu.conf 
+  846  vi dcstemnetwork_redirect.conf 
+  847  systemctl restart httpd
+  848  cd /srv/Web/Drupal7/dtdi.carnegiescience.edu/sites/all/themes/bootstrap-d7-theme/
+  849  ls
+  850  cd templates
+  851  ls
+  852  mkdir HOLD
+  853  mv node--person.tpl.php HOLD/
+  854  grep -i exploring
+  855  grep -i exploring *
+  856  vi page--seminars.tpl.php 
+  857  ls
+  858  vi page.tpl.php 
+  859  ls -larth
+  860  mv HOLD/ /root/
+  861  clear
+  862  screen -ls
+  863  screen 
+  864  exit
+  865  exit
+  866  screen -dR
+  867  screen -dR
+  868  cd /home/ad.ciw.edu/
+  869  ls
+  870  screen -dR
+  871  cd bi
+  872  cd bin
+  873  ls
+  874  screen -dR
+  875  cd /etc/httpd/vhost.d/
+  876  ls
+  877  cd Drupal7
+  878  ls
+  879  vi d7_ferro2016_carnegiescience_edu.conf
+  880  cd ../../includes/
+  881  ls
+  882  cd sites/
+  883  vi d7_ferro2016_carnegiescience_edu.inc
+  884  cd /srv/Web/Drupal7/ferro2016.carnegiescience.edu/sites/default/
+  885  ls
+  886  vi settings.php
+  887  mv settings.php settings.php.old
+  888  cp default.settings.php settings.php
+  889  chmod 777 settings.php
+  890  vi settings.php.old 
+  891  chmod 444 settings.php
+  892  ls -larth
+  893  drush @sites dl ldap entity -y
+  894  drush @sites up -y
+  895  pwd
+  896  cd ..
+  897  ls
+  898  unlink it.carnegiescience.edu/
+  899  ls
+  900  unlink it.carnegiescience.edu
+  901  cd default/
+  902  drush @sites up
+  903  drush @sites updb
+  904  cd ../all/modules/
+  905  ls
+  906  wget http://ftp.drupal.org/files/projects/ldap-7.x-2.0-beta8.tar.gz
+  907  tar zxvf ldap-7.x-2.0-beta8.tar.gz 
+  908  drush @sites up updb -y
+  909  drush @sites updb -y
+  910  php -i | grep -i memory
+  911  vi /etc/php.ini 
+  912  systemctl restart httpd
+  913  php -i | grep -i memory
+  914  drush @sites updb -y
+  915  vi /etc/php.ini 
+  916  systemctl restart httpd
+  917  drush @sites updb -y
+  918  cd ldap
+  919  vi ldap_authentication/ldap_authentication.module 
+  920  cd ..
+  921  rm -rf ldap
+  922  wget http://ftp.drupal.org/files/projects/ldap-7.x-1.0-beta12.tar.gz
+  923  tar zxvf ldap-7.x-1.0-beta12.tar.gz 
+  924  rm ldap-7.x-2.0-beta8.tar.gz 
+  925  drush @sites updb -y
+  926  vi /etc/php.ini 
+  927  systemctl restart httpd
+  928  cd ..
+  929  cd it.carnegiescience.edu/sites/all/modules/
+  930  drush @sites dl variablecheck
+  931  drush @sites en variablecheck
+  932  cd ..
+  933  cd ../..
+  934  cd ..
+  935  ls
+  936  cd emb.carnegiescience.edu/sites/all/themes/bootstrap-d7-theme/
+  937  ls
+  938  cd ..
+  939  pwd
+  940  rsync -av /srv/Web/Drupal7/emb.carnegiescience.edu/sites/all/themes/bootstrap-d7-theme /root/
+  941  cd ../../../
+  942  ls
+  943  cd ../dtdi.carnegiescience.edu/sites/all/themes/
+  944  rsync -av bootstrap-d7-theme /root/bootstrap-d7-theme-dtdi
+  945  rsync -av /root/bootstrap-d7-theme/ bootstrap-d7-theme/
+  946  rm -rf bootstrap-d7-theme
+  947  pwd
+  948  rsync -av /srv/Web/Drupal7/emb.carnegiescience.edu/sites/all/themes/bootstrap-d7-theme ./
+  949  diff  bootstrap-d7-theme/templates/page--front.tpl.php /root/bootstrap-d7-theme-dtdi/bootstrap-d7-theme/templates/page--front.tpl.php
+  950  cd bootstrap-d7-theme/templates/
+  951  pwd
+  952  vi page--front.tpl.php 
+  953  vi ../bootstrap_carnegie.info 
+  954  cd ..
+  955  cd js/
+  956  vi carnegie.js 
+  957  cd ..
+  958  ls
+  959  cd templates
+  960  vi page.tpl.php 
+  961  diff page.tpl.php /root/bootstrap-d7-theme-dtdi/bootstrap-d7-theme/templates/page.tpl.php 
+  962  vi page.tpl.php 
+  963  ls
+  964  cd..
+  965  ls
+  966  cd ..
+  967  ls
+  968  cd css
+  969  ls
+  970  grep -i page-title *
+  971  vi carnegie.css 
+  972  pwd
+  973  cd ../templates/
+  974  ls
+  975  vi node--person.tpl.php 
+  976  mv node--person.tpl.php node--person.tpl.php.hold
+  977  mv node--person.tpl.php.hold node--person.tpl.php
+  978  vi node--person.tpl.php.hold node--person.tpl.php.hold[Bon.tpl.php.hold 
+  979  mv node--person.tpl.php  node--person.tpl.php.hold
+  980  exit
+  981  exit
+  982  screen -dR
+  983  cd /etc/httpd/vhost.d/Drupal7
+  984  ls
+  985  vi d7_scicomdev_carnegiescience_edu.conf
+  986  cd ../../
+  987  cd includes/
+  988  ls
+  989  cd sites/
+  990  ls
+  991  mv d7_scicomdev_carnegiescience_edu.inc d7_scicompdev_carnegiescience_edu.inc
+  992  vi 
+  993  vi d7_scicompdev_carnegiescience_edu.inc
+  994  cd ..
+  995  cd ../vhost.d/Drupal7/
+  996  mv d7_scicomdev_carnegiescience_edu.conf d7_scicompdev_carnegiescience_edu.conf
+  997  systemctl restart httpd
+  998  grep scicom *
+  999  vi ../../includes/sites/d7_scicompdev_carnegiescience_edu.inc 
+ 1000  systemctl restart httpd
+ 1001  cd /srv/Web/Drupal6
+ 1002  ls
+ 1003  drush @sites up -y
+ 1004  cd ..
+ 1005  cd Drupal7/
+ 1006  ls
+ 1007  cd carnegiescience.edu/
+ 1008  ls
+ 1009  ls -larth
+ 1010  cd sites/all/themes/
+ 1011  ls
+ 1012  cd carnegie/
+ 1013  git init
+ 1014  yum install git
+ 1015  git init
+ 1016  vi .git/
+ 1017  git remote add origin git@github.com:carnegie/hq_theme.git
+ 1018  git add *
+ 1019  git commit -m "20150825 HQ Theme Git Initialize"
+ 1020  git push -u origin master
+ 1021  pwd
+ 1022  history | grep git
+ 1023  history > bl

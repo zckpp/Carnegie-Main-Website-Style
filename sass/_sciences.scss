@@ -1,0 +1,501 @@
+.page-taxonomy{
+    #banner .banner{
+        position:static;
+        
+    }
+}
+.term-description{
+    font-size: 26px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 26px;
+}
+.science-image{
+    position:absolute;
+    width:100%;
+    
+}
+.featured-area{
+    width:100%;
+    float:left;
+    margin-bottom:30px;
+    @include breakpoint(medium){
+        display:none;
+    }
+    @include breakpoint(small){
+        display:none;
+    }
+    .views_slideshow_main{
+        width:55%;
+        float:left;
+        .views-slideshow-cycle-main-frame{
+            width:100% !important;
+        }
+        .views-slideshow-cycle-main-frame-row{
+            width:100% !important;
+        }
+        .views-row{
+            margin:0;
+        }
+        .item-flag a{
+            z-index:9;
+        }
+        .views-field-field-main-image{
+            width:100%;
+        }
+        .item-content{
+            background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);
+            color: #fff;
+            left: 0;
+            margin: 0;
+            padding: 40px 30px 15px;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            a{
+                color:#fff;
+                font-weight:normal;
+            }
+            .explore-story a{
+                background:url("../images/explore_icon.png") no-repeat scroll 140px 15px #fff;
+                padding:15px 53px 17px 20px;
+                right:0;
+                bottom:auto;
+                border-right:2px solid #f7f7f7;
+            }
+            .explore-story a:hover{
+                background-position: 140px -39px;
+            }
+        }
+    }
+    .views-slideshow-controls-bottom{
+        width:45%;
+        float:left;
+        padding:0 2%;
+        background:#fff;
+        display:table;
+        .views-slideshow-pager-fields{
+            display:table-cell;
+            vertical-align:middle;
+        }
+        .views-slideshow-pager-field-item{
+            width:100%;
+            float:left;
+            margin-bottom:3px;
+            background:none repeat scroll 0 0 #f7f7f7;
+            .views-field-field-main-image{
+                width:23%;
+                float:left;
+                line-height:0;
+                border-right:3px solid #fff;
+                a{
+                    line-height:0;
+                }
+                img{
+                    width:100%;
+                    height:100%;
+                }
+            }
+            .views-field-title{
+                float: left;
+                padding: 20px 5%;
+                width: 67%;
+                a:hover{
+                    color:#fff !important;
+                }
+            }
+        
+            .views-field-nid{
+                float:left;
+                width:10%;
+                background:rgba(0,0,0,0.2);
+                display:table;
+                .views-content-nid{
+                    display:table-cell;
+                    vertical-align:middle;
+                    text-align:center;
+                }
+                a{
+                    border: 1px solid;
+                    border-radius: 50%;
+                    color: #fff;
+                    display: inline-block;
+                    font-family: Times New Roman;
+                    font-size: 26px;
+                    font-weight: normal;
+                    height: 24px;
+                    line-height: 22px;
+                    width: 24px;
+                    
+                }
+                a:hover{
+                    color:#fff;
+                }
+            }
+        }
+    
+        .views-slideshow-pager-field-item:hover{
+            background:$green;
+            a{
+                color:#fff;
+            }
+            img{
+                opacity:0.6;
+            }
+        }
+    }
+}
+.page-taxonomy{
+     #content{
+        @include breakpoint(medium){
+            margin-top:20px;
+        }
+        @include breakpoint(small){
+            margin-top:20px;
+        }
+    }
+    #sidebar-right{
+        @include breakpoint(small){
+            margin-left:0;
+            width:100%;
+        }
+    }
+}
+.page-taxonomy-term{
+    header{
+        background:url("../images/plant_header.png") no-repeat scroll 0 0;
+        -webkit-background-size: cover; /* For WebKit*/
+        -moz-background-size: cover;    /* Mozilla*/
+        -o-background-size: cover;      /* Opera*/
+        background-size: cover;         /* Generic*/
+        @include breakpoint(medium){
+                background:#fff !important;
+                border-color:#fff !important;
+        }
+        @include breakpoint(small){
+                background:#fff !important;
+                border-color:#fff !important;
+        }
+    }
+    #banner{
+    .science-image{
+        background: url("../images/plant_bg.png") no-repeat fixed center center / cover rgba(0, 0, 0, 0);
+        -webkit-background-size: cover; /* For WebKit*/
+        -moz-background-size: cover;    /* Mozilla*/
+        -o-background-size: cover;      /* Opera*/
+        background-size: cover;         /* Generic*/
+        height: 70%;
+    }
+    .banner-image img{
+
+    }
+        .banner .banner-second{
+            .banner-title{
+                background:url("../images/plant.png") no-repeat scroll left bottom transparent;
+            }
+        }
+        
+    }
+    #main-wrapper{
+        padding-top:20px;
+        #main{
+            position:relative;
+            z-index:1;
+        }
+    }
+    #sidebar-right{
+        @include breakpoint(medium){
+            display:none;
+        }
+        @include breakpoint(small){
+            display:none;
+        }
+    }
+}
+.page-taxonomy-term-1{
+    .featured-area .views-slideshow-controls-bottom .views-slideshow-pager-field-item:hover{
+        background:$purple;
+    }
+    header{
+        background:url("../images/astronomy_header.png") no-repeat scroll 0 0;
+        -webkit-background-size: cover; /* For WebKit*/
+        -moz-background-size: cover;    /* Mozilla*/
+        -o-background-size: cover;      /* Opera*/
+        background-size: cover;         /* Generic*/
+        
+    }
+    #banner{
+        .science-image{
+            background: url("../images/astronomy_bg.png") no-repeat fixed center center / cover rgba(0, 0, 0, 0);
+            -webkit-background-size: cover; /* For WebKit*/
+            -moz-background-size: cover;    /* Mozilla*/
+            -o-background-size: cover;      /* Opera*/
+            background-size: cover;         /* Generic*/
+            height: 70%;
+        }
+        .banner .banner-second{
+            .banner-title{
+                background:url("../images/astronomy.png") no-repeat scroll left bottom transparent;
+            }
+        }
+    }
+}
+.page-taxonomy-term-2{
+    .featured-area .views-slideshow-controls-bottom .views-slideshow-pager-field-item:hover{
+        background:$orange;
+    }
+        header{
+        background:url("../images/earth_header.png") no-repeat scroll 0 0;
+        -webkit-background-size: cover; /* For WebKit*/
+        -moz-background-size: cover;    /* Mozilla*/
+        -o-background-size: cover;      /* Opera*/
+        background-size: cover;         /* Generic*/
+    }
+    #banner{
+        .science-image{
+            background: url("../images/earth_bg.png") no-repeat fixed center center / cover rgba(0, 0, 0, 0);
+            -webkit-background-size: cover; /* For WebKit*/
+            -moz-background-size: cover;    /* Mozilla*/
+            -o-background-size: cover;      /* Opera*/
+            background-size: cover;         /* Generic*/
+            height: 70%;
+        }
+            .banner .banner-second{
+                .banner-title{
+                    background:url("../images/earth.png") no-repeat scroll left bottom transparent;
+                }
+            }
+        }
+}
+.page-taxonomy-term-3{
+.featured-area .views-slideshow-controls-bottom .views-slideshow-pager-field-item:hover{
+        background:$pink;
+    }
+        header{
+        background:url("../images/genetics_header.png") no-repeat scroll 0 0;
+        -webkit-background-size: cover; /* For WebKit*/
+        -moz-background-size: cover;    /* Mozilla*/
+        -o-background-size: cover;      /* Opera*/
+        background-size: cover;         /* Generic*/
+    }
+    #banner{
+        .science-image{
+            background: url("../images/genetics_bg.png") no-repeat fixed center center / cover rgba(0, 0, 0, 0);
+            -webkit-background-size: cover; /* For WebKit*/
+            -moz-background-size: cover;    /* Mozilla*/
+            -o-background-size: cover;      /* Opera*/
+            background-size: cover;         /* Generic*/
+            height: 70%;
+        }
+            .banner .banner-second{
+                .banner-title{
+                    background:url("../images/genetics.png") no-repeat scroll left bottom transparent;
+                }
+            }
+        }
+}
+.page-taxonomy-term-4{
+.featured-area .views-slideshow-controls-bottom .views-slideshow-pager-field-item:hover{
+        background:$yellow;
+    }
+        header{
+        background:url("../images/ecology_header.png") no-repeat scroll 0 0;
+        -webkit-background-size: cover; /* For WebKit*/
+        -moz-background-size: cover;    /* Mozilla*/
+        -o-background-size: cover;      /* Opera*/
+        background-size: cover;         /* Generic*/
+    }
+    #banner{
+        .science-image{
+            background: url("../images/ecology_bg.png") no-repeat fixed center center / cover rgba(0, 0, 0, 0);
+            -webkit-background-size: cover; /* For WebKit*/
+            -moz-background-size: cover;    /* Mozilla*/
+            -o-background-size: cover;      /* Opera*/
+            background-size: cover;         /* Generic*/
+            height: 70%;
+        }
+            .banner .banner-second{
+                .banner-title{
+                    background:url("../images/ecology.png") no-repeat scroll left bottom transparent;
+                }
+            }
+        }
+}
+.page-taxonomy-term-5{
+.featured-area .views-slideshow-controls-bottom .views-slideshow-pager-field-item:hover{
+        background:$red;
+    }
+        header{
+        background:url("../images/mattar_header.png") no-repeat scroll 0 0;
+        -webkit-background-size: cover; /* For WebKit*/
+        -moz-background-size: cover;    /* Mozilla*/
+        -o-background-size: cover;      /* Opera*/
+        background-size: cover;         /* Generic*/
+    }
+    #banner{
+        .science-image{
+            background: url("../images/mattar_bg.png") no-repeat fixed center center / cover rgba(0, 0, 0, 0);
+            -webkit-background-size: cover; /* For WebKit*/
+            -moz-background-size: cover;    /* Mozilla*/
+            -o-background-size: cover;      /* Opera*/
+            background-size: cover;         /* Generic*/
+            height: 70%;
+        }
+            .banner .banner-second{
+                .banner-title{
+                    background:url("../images/matter.png") no-repeat scroll left bottom transparent;
+                }
+            }
+        }
+}
+.page-taxonomy-term-6{
+        #banner{
+            .banner .banner-second{
+                .banner-title{
+                    background:url("../images/plant.png") no-repeat scroll left bottom transparent;
+                }
+            }
+        }
+}
+.page-taxonomy-term-7{
+.featured-area .views-slideshow-controls-bottom .views-slideshow-pager-field-item:hover{
+        background:$blue;
+    }
+        header{
+        background:url("../images/education_header.png") no-repeat scroll 0 0;
+        -webkit-background-size: cover; /* For WebKit*/
+        -moz-background-size: cover;    /* Mozilla*/
+        -o-background-size: cover;      /* Opera*/
+        background-size: cover;         /* Generic*/
+    }
+    #banner{
+        .science-image{
+            background: url("../images/education_bg.png") no-repeat fixed center center / cover rgba(0, 0, 0, 0);
+            -webkit-background-size: cover; /* For WebKit*/
+            -moz-background-size: cover;    /* Mozilla*/
+            -o-background-size: cover;      /* Opera*/
+            background-size: cover;         /* Generic*/
+            height: 70%;
+        }
+            .banner .banner-second{
+                .banner-title{
+                    background:url("../images/education.png") no-repeat scroll left bottom transparent;
+                }
+            }
+        }
+}
+
+.not-front.page-node .region-content #node-55{
+    padding:0;
+    .field-name-body{
+        width:100%;
+        ul{
+                margin:0;
+                box-shadow:-2px 0 1px #eee;
+                float:right;
+                width:100%;
+                li{
+                    float:left;
+                    list-style:none;
+                    margin:0;
+                    padding:0;
+                    width:100%;
+                     a{
+                        box-shadow:2px 0 1px #eee;
+                        font-family: hammersmith one;
+                        font-size: 13px;
+                        text-transform: uppercase;
+                        vertical-align: middle;
+                        line-height:15px;
+                        width:100%;
+                        display:block;
+                        height:50px !important;
+                        border-top:none !important;
+                        padding:20px 20px 20px 80px;
+                     }
+                    
+                    a:hover,a.active{
+                        color:#fff !important;
+                        -webkit-transition: all 0.5s ease;
+                        -moz-transition: all 0.5s ease;
+                        -o-transition: all 0.5s ease;
+                        -ms-transition: all 0.5s ease;
+                        transition: all 0.5s ease;
+                        padding:20px 30px;
+                    }
+                    .astronomy{
+                        border-top:8px solid $purple;
+                        background:url("../images/mobile_astro.png") no-repeat scroll 20px 6px rgba(0, 0, 0, 0);
+                    }
+                    .astronomy:hover,.astronomy.active{
+                        background:$purple;
+                    }
+                    .earth{
+                        border-top:8px solid $orange;
+                        background:url("../images/mobile_earth.png") no-repeat scroll 20px 6px rgba(0, 0, 0, 0);
+                    }
+                    .earth:hover,.earth.active{
+                        background:$orange;
+                    }
+                    .genetics{
+                        border-top:8px solid $pink;
+                        background:url("../images/mobile_genetics.png") no-repeat scroll 20px 6px rgba(0, 0, 0, 0);
+                    }
+                    .genetics:hover,.genetics.active{
+                        background:$pink;
+                    }
+                    .ecology{
+                        border-top:8px solid $yellow;
+                        background:url("../images/mobile_ecology.png") no-repeat scroll 20px 6px rgba(0, 0, 0, 0);
+                    }
+                    .ecology:hover,.ecology.active{
+                        background:$yellow;
+                    }
+                    .matter{
+                        border-top:8px solid $red;
+                        background:url("../images/mobile_matter.png") no-repeat scroll 20px 6px rgba(0, 0, 0, 0);
+                    }
+                    .matter:hover,.matter.active{
+                        background:$red;
+                    }
+                    .plant{
+                        border-top:8px solid $green;
+                        background:url("../images/mobile_plant.png") no-repeat scroll 20px 6px rgba(0, 0, 0, 0);
+                    }
+                    .plant:hover,.plant.active{
+                        background:$green;
+                    }
+                    .education{
+                        border-top:8px solid $blue;
+                        background:url("../images/mobile_education.png") no-repeat scroll 20px 6px rgba(0, 0, 0, 0);
+                    }
+                    .education:hover,.education.active{
+                        background:$blue;
+                    }
+                }
+                li.first{
+                    a{
+                    }
+                }
+                li.last{
+                    a{
+                        box-shadow:none;
+                        box-shadow:2px 0 1px #eee;
+                    }
+                }
+        }
+    }
+}
+#block-views-nodequeue-24-block-4,#block-views-scientists-block-2,#block-views-scientists-block-1,#block-block-4{
+    display:none;
+    @include breakpoint(medium){
+        display:block;
+    }
+    @include breakpoint(small){
+        display:block;
+    }
+
+}
+#sidebar-right .view-you-may-also-like- .view-header{
+    display:none;
+}

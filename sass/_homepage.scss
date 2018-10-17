@@ -1,0 +1,479 @@
+.front{
+	&.page-node{
+		.node{
+			background:none;
+		}
+	}
+    #block-menu-menu-explore-our-science{
+	position:relative;
+	h2{
+	    
+	}
+    }
+
+    #block-views-nodequeue-9-block-1{
+    	display:none;
+    	@include breakpoint(medium){
+    		display:block;
+    	}
+    	@include breakpoint(small){
+    		display:block;
+    	}
+    }
+    #content{
+	width:100%;
+	h2 a{
+	    font-weight:normal;
+	    color:#fff;
+	}
+	.panels-flexible-region{
+	    width:100% !important;
+	}
+	.panels-flexible-row{
+	    width:100%;
+	    float:left;
+	    .panel-pane{
+	    	@include breakpoint(medium){
+	    		width:100% !important;
+	    	}
+	    }
+	}
+	.panels-flexible-row-first{
+		display:none;
+	}
+	.panels-flexible-row-14-main-row{
+	     overflow: hidden;
+	     position:relative;
+	     margin-bottom:30px;
+	     ul{
+		position:relative;
+	     }
+	     .panel-pane{
+			float: left;
+			background:#fff;
+			ul{
+				margin:0;
+			}
+			.node{
+			    padding:40px;
+			}
+	     }
+	    .pane-views-nodequeue-4-block-6{
+			width:30%;
+			background:#333;
+			margin-right:3%;
+			display:table;
+			@include breakpoint(medium){
+				display:none;
+			}
+			@include breakpoint(small){
+			    width:100%;
+			    margin:0 0 30px;
+			    display:none;
+			}
+			.views-row {
+				display:table;
+				background:none;
+			}
+			.node{
+			    color:#ccc;
+			    font-family:tahoma;
+			    text-align:center;
+			    font-size:16px;
+			    display:table-cell;
+			    vertical-align:middle;
+			    h2{
+					margin-bottom:10px;
+					a{
+					    background: url("../images/big_hand.png") no-repeat scroll left 7px rgba(0, 0, 0, 0);
+					    padding-left: 70px;
+					}
+					a:hover{
+					    background-position:left bottom;
+					}
+			    }
+			    .field-name-body{
+					font-size:18px;
+					a{
+					    background: none repeat scroll 0 0 #777;
+					    color: #ccc;
+					    display: block;
+					    font-weight: bold;
+					    margin-top: 20px;
+					    padding: 15px;
+					    text-transform: uppercase;
+					}
+					a:hover{
+					    background:$red;
+					    color:#fff !important;
+					}
+			    }
+			}
+	    }
+	    .panel-separator{
+	    	display:none;
+	    }
+	    .pane-views-nodequeue-4-block{
+		width:67%;
+		float:left;
+		@include breakpoint(small){
+		    width:100%;
+		}
+	    }
+	}
+	.panels-flexible-row-14-1 {
+	margin-bottom:10px;
+	    .views-field-field-main-image{
+		width:45%;
+		margin-right:3%;
+		.field-label{
+			display:none;
+		}
+		@include breakpoint(small){
+		    width:100%;
+		    margin: 0;
+		}
+	    }
+	    .item-flag a{
+		left:45%;
+		@include breakpoint(small){
+		    left:0;
+		}
+	    }
+	    .item-content{
+		margin: 70px 2%;
+		width: 46%;
+		@include breakpoint(medium){
+			margin:35px 2%;
+		}
+		@include breakpoint(small){
+		    width:92%;
+		    margin:35px 4% 60px;
+		}
+		.views-field-title a{
+		    font-size:40px;
+		    line-height:45px;
+		    @include breakpoint(medium){
+		    	font-size:24px;
+		    	line-height:24px;
+		    }
+		    @include breakpoint(small){
+		    	font-size:24px;
+		    	line-height:24px;
+		    }
+		}
+	    }
+	}
+	.panels-flexible-row-14-2{
+	    width:100%;
+	    .four-blocks-row{
+			float:left;
+	    }
+	    .left-row{
+			width:30%;
+			margin-right:3%;
+			background:#fff;
+			@include breakpoint(medium){
+			    width:100%;
+			    margin:0 0 30px;
+			}
+			@include breakpoint(small){
+			    width:100%;
+			    margin:0 0 30px;
+			}
+	    }
+	    .right-row{
+			width:67%;
+			@include breakpoint(medium){
+			    width:100%;
+			}
+			@include breakpoint(small){
+			    width:100%;
+			}
+	    }
+	    .second-div{
+			width:100%;
+			float:left;
+			height:50%;
+			margin-top:3%;
+			@include breakpoint(small){
+			    width:100%;
+			    height:auto;
+			}
+			.views-row{
+			}
+	    }
+	    .view-nodequeue-4.view-display-id-block_2{
+			.views-field-field-main-image{
+			    width:100%;
+			    @include breakpoint(medium){
+			    	width:25%;
+			    }
+			}
+			.item-content {
+			    float: left;
+			    margin: 20px 8% 50px;
+			    width: 84%;
+			    @include breakpoint(medium){
+			    	margin: 20px 3% 50px;
+    				width: 69%;
+			    }
+			    @include breakpoint(small){
+				width:92%;
+				margin:30px 4% 60px;
+			    }
+			}
+	    }
+	    .view-nodequeue-4.view-display-id-block_7{
+			float:left;
+			width:48.5%;
+			margin-right:3%;
+			height:100%;
+			background:#fff;
+			overflow:hidden;
+			@include breakpoint(medium){
+				height:auto;
+			}
+			.views-field-field-main-image{	
+				display:none;
+			}
+			.item-content {
+			    margin: 35px 8% 50px;
+			    width: 84%;
+			}
+			@include breakpoint(medium){
+			    width:100%;
+			    margin:0;
+			}
+			@include breakpoint(small){
+			    width:100%;
+			    margin:0;
+			}
+	    }
+	    .view-nodequeue-4.view-display-id-block_8{
+			float:left;
+			width:48.5%;
+			background:#333;
+			height:100%;
+			display:table;
+			@include breakpoint(medium){
+				display:none;
+			}
+			@include breakpoint(small){
+			    width:100%;
+			    margin:0 0 30px;
+			    display:none;
+			}
+			.views-row{
+				display:table;
+				background:none;
+			}
+			.node{
+			    color:#ccc;
+			    font-family:tahoma;
+			    text-align:center;
+			    padding:40px;
+			    display:table-cell;
+			    vertical-align:middle;
+			    background:none;
+			    h2{
+				margin-bottom:15px;
+				a{
+				    background: url("../images/connected.png") no-repeat scroll 0 0 transparent;
+				    padding-left: 62px;
+				}
+				a:hover{
+				    background-position:left bottom;
+				}
+			    }
+			    .field-name-body{
+				font-size:18px;
+				a{
+				    background: none repeat scroll 0 0 #777;
+				    color: #ccc;
+				    display: block;
+				    font-weight: bold;
+				    margin-top: 20px;
+				    padding: 15px;
+				    text-transform: uppercase;
+				}
+				a:hover{
+				    background:$red;
+				    color:#fff !important;
+				}
+			    }
+			}
+	    }
+	    .view-nodequeue-4.view-display-id-block_5{
+			float:left;
+			width:100%;
+			height:45%;
+			background:#fff;
+			overflow:hidden;
+			.views-field-field-main-image{
+				max-height:350px;
+				@include breakpoint(medium){
+					max-height:100%;
+					width:25%;
+				}
+				@include breakpoint(small){
+					max-height:100%;
+				}
+			}
+			.item-content{
+				@include breakpoint(medium){
+					width:69%;
+					margin-left:3%;
+					margin-right:3%;
+				}
+			}
+			@include breakpoint(medium){
+			    width:100%;
+			    margin:0 0 30px;
+			    height:auto;
+			}
+			@include breakpoint(small){
+			    width:100%;
+			    margin:0 0 30px;
+			    height:auto;
+			}
+	    }
+	    
+	}
+	.panels-flexible-row-14-3{
+	    margin-top:40px;
+	    @include breakpoint(medium){
+	    	display:none;
+	    }
+	    @include breakpoint(small){
+			display:none;
+	    }
+	    .panel-separator{
+	    	display:none;
+
+	    }
+	    .pane-views-nodequeue-4-block-3{
+		width:67%;
+		float:left;
+		margin-right:3%;
+		background:#636161;
+		display:table;
+		@include breakpoint(small){
+		    width:100%;
+		    margin:0 0 30px;
+		}
+		.views-row{
+			background:none;
+		}
+		.node{
+		    color:#ccc;
+		    font-family:tahoma;
+		    text-align:center;
+		    padding:25px;
+		    display:table-cell;
+		    vertical-align:middle;
+		    display:block;
+		    margin:0 auto;
+		    h2{
+			display:none;
+		    }
+		    .field-name-body{
+			.research-left{
+			    width: 48%;
+			    float:left;
+			    @include breakpoint(small){
+				width:100%;
+			    }
+			}
+			h2{
+			    display:block;
+			    font-size:40px;
+			    line-height:45px;
+			    margin-bottom:30px;
+			}
+			.research-text{
+			    background:#545454;
+			    padding:20px;
+			    margin:30px;
+			    text-align:left;
+			    @include breakpoint(small){
+				margin:30px 10px;
+			    }
+			}
+			.research-links{
+			    width:48%;
+			    margin-left:4%;
+			    float:left;
+			    @include breakpoint(small){
+				width:100%;
+				margin:0;
+			    }
+			    ul{
+				@include breakpoint(small){
+				    margin:0;
+				}
+			    }
+			    li{
+				list-style:none;
+				@include breakpoint(small){
+				    margin:0;
+				}
+			    }
+			}
+			a{
+			    background: url("../images/right_arrow.png") no-repeat scroll right center #333;
+			    color: #ccc;
+			    display: block;
+			    font-weight: bold;
+			    margin-bottom: 10px;
+			    padding: 15px 20px;
+			    text-transform: uppercase;
+			    text-align:left;
+			}
+			a:hover{
+			    color:#fff !important;
+			    background:url("../images/white_arrow.png") no-repeat scroll right center $red;
+			}
+		    }
+		}
+	    }
+	    .pane-views-nodequeue-4-block-9{
+		width:30%;
+		float:left;
+		background:#fff;
+		.views-field-field-main-image{	
+				display:none;
+			}
+		@include breakpoint(small){
+		    width:100%;
+		    margin:0 0 30px;
+		}
+		.item-content {
+		    margin: 35px 8% 50px;
+		    width: 84%;
+		}
+	    }
+	}
+	.panels-flexible-row-14-4{
+		margin-top:30px;
+	}
+	.field-name-title{
+	    padding:0 4%;
+	}
+	.field-name-body{
+	}
+	.field-name-node-link{
+	    padding:0 4%;
+	}
+    }
+}
+
+.pane-views-nodequeue-24-block-4,.pane-views-events-block-4,.pane-views-scientists-block-2,.pane-views-scientists-block-1{
+	display:none;
+	@include breakpoint(medium){
+		display:block;
+	}
+	@include breakpoint(small){
+		display:block;
+	}
+}

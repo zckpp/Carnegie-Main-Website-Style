@@ -1,0 +1,227 @@
+/*Donate Landing Page redesign*/
+.page-node-1589 {
+  .blurb p {
+    font-family: "Lato";
+    font-size: 45px;
+    color: #fff;
+    padding-left: 90px;
+    padding-bottom: 22px;
+    text-shadow: 1px 2px 2px #000;
+    font-weight: bold;
+  }
+  #page {
+    border-right: 1px solid #bbb;
+    border-bottom: 3px solid #163671;
+    border-left: 1px solid #bbb;
+    background-color: #ffffff;
+    padding: 0;
+  }
+  #page-wrapper {
+    background: #dadada;
+  }
+  .blurb2 {
+    label {
+      font-size: 45px;
+      color: white;
+      padding: 0 90px 20px;
+      border-bottom: 3px solid white;
+    }
+    p {
+      margin-top: 23px;
+      font-size: 25px;
+      line-height: 1.5;
+      font-weight: bold;
+    }
+  }
+  p {
+    padding: 0;
+  }
+  section#main-wrapper {
+    float: none;
+  }
+  .row {
+    margin-bottom: 20px;
+  }
+  #banner {
+    background: none;
+  }
+  #social-bar, #banner {
+    display: none;
+  }
+  #sidebar-right {
+    float: left;
+    width: auto;
+    margin-left: 1%;
+  }
+  header #header ul.mobile-menu {
+    top: 70px;
+    opacity: 0.9;
+  }
+  #content {
+    width: 100%;
+  }
+  header #header.white-header #pull {
+    background: url("../images/menu_icon.png");
+    display: block;
+    top: 24px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+  }
+  .js-waypoint {
+    color: black;
+    width: 100%;
+  }
+  header #header ul.mobile-menu {
+    width: 135%;
+    margin: 0 0 0 -19.5%;
+  }
+  #main-wrapper {
+    background: none;
+  }
+  .normal-logo {
+    display: block !important;
+  }
+  header #header.white-header .header-menus {
+    border-bottom: none;
+    padding: 0;
+    background: none !important;
+  }
+  #give {
+    position: absolute;
+    top: 20px;
+    right: 60px;
+    border: 1px solid darkgoldenrod;
+    padding: 10px 15px 10px 15px;
+    font-family: Lato;
+    border-radius: 6%;
+    &:hover {
+      background-color: darkgoldenrod;
+      color: white;
+    }
+  }
+  a#give:hover {
+    color: #fff !important;
+  }
+  #sidebar-right .block {
+    width: auto !important;
+  }
+  .btn.btn-default.btn-danger {
+    padding: 0;
+    font-size: 15px;
+    padding: 6px 12px;
+  }
+}
+
+@media screen and (min-width: 1061px) {
+  .page-node-1589 header #header.white-header #pull {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .blurb p {
+    font-size: 30px;
+  }
+}
+
+.support {
+  position: absolute;
+  bottom: 100px;
+  right: 20%;
+}
+
+.one-half span {
+  font-size: 25px;
+  display: block;
+  margin: 10px 0;
+}
+
+select.input-lg {
+  height: 25px;
+  width: auto;
+  font-size: 14px;
+  padding: 0;
+  padding-left: 5px;
+}
+
+header #header ul.mobile-menu li a:hover {
+  background: grey !important;
+}
+
+.one-half.col-md-6 p {
+  width: 80%;
+}
+.textBox {
+  display: inline-block;
+  margin-top: 110px;
+  margin-bottom: 60px;
+}
+
+@media screen and (max-width: 670px) {
+  .page-node-1589 .blurb p {
+    padding-left: 0;
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .page-node-1589 .btn.btn-default.btn-danger, .buttonWrap {
+    float: none;
+    margin-top: 0;
+  }
+  .textBox {
+    margin: 0;
+  }
+  .textWrapper {
+    padding-top: 80px;
+  }
+}
+@media screen and (max-width: 370px) {
+  #give {
+    display: none;
+  }
+  .giving-form.col-xs-12 {
+    padding-left: 0;
+  }
+  .page-node-1828 .giving-form.col-xs-12 input.btn.btn-default.btn-danger {
+    width: 312px;
+  }
+}
+@media screen and (min-width: 1060px) and (max-width: 1350px) {
+  .page-node-1589 .btn.btn-default.btn-danger, .buttonWrap {
+    float: none;
+    margin-top: 0;
+  }
+  .page-node-1589 .row {
+    margin-bottom: 40px;
+  }
+}
+
+.buttonWrap {
+  margin-top: 15px;
+}
+
+.page-node-1828 {
+  input.btn.btn-default.btn-danger {
+    background-image: url('https://carnegiescience.edu/sites/all/themes/carnegie/images/paypal.png');
+    width: 322px;
+    background-size: 86%;
+    background-repeat: no-repeat;
+    border-color: black;
+    color: transparent;
+    background-color: white;
+    margin-bottom: 20px;
+    background-position: center;
+    border-color: #cccccc;
+  }
+  a.btn {
+    margin-right: 10px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-family: verdana;
+    padding-top: 3px;
+    padding-bottom: 7px;
+  }
+}

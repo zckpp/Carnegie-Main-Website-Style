@@ -1,0 +1,95 @@
+/*wedding page*/
+.page-node-2294 p {
+  font-size: 16px; }
+.page-node-2294 header #header {
+  box-shadow: none; }
+.page-node-2294 .logo {
+  position: absolute;
+  left: 10px; }
+
+.page-node-2330 .logo {
+  position: absolute;
+  left: 10px; }
+
+.page-node-2294 header #header, .page-node-2330 header #header {
+  border: none;
+  padding: 0; }
+
+.page-node-2294 header #header ul.mobile-menu, .page-node-2330 header #header ul.mobile-menu {
+  top: 70px;
+  opacity: 0.9; }
+
+.page-node-2294 header #header.white-header #pull, .page-node-2330 header #header.white-header #pull {
+  background: url("../images/hamburger-icon1.png");
+  display: block !important;
+  top: 24px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  background-size: cover; }
+
+.page-node-2294 header #header ul.mobile-menu, .page-node-2330 header #header ul.mobile-menu {
+  width: 135%;
+  margin: -10px 0 0 -19.5%; }
+
+.page-node-2294 header #header.white-header .header-menus, .page-node-2330 header #header.white-header .header-menus {
+  border-bottom: none;
+  padding: 0;
+  background: none !important; }
+
+.page-node-2294 header #header .carnegie_container h1, .page-node-2330 header #header .carnegie_container h1 {
+  position: relative;
+  top: 7px;
+  color: #92d050;
+  text-align: center;
+  width: 70%;
+  margin: 0 auto; }
+
+.page-node-2294 header #header .carnegie_container h1 span, .page-node-2330 header #header .carnegie_container h1 span {
+  color: #ff0000; }
+
+.page-node-2294 .js-waypoint, .page-node-2330 .js-waypoint {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  min-height: 70px; }
+
+.page-node-2294 h1.title, .page-node-2390 h1.title {
+  text-align: center;
+  color: #0070c0; }
+
+.page-node-2294 #main-wrapper, .page-node-2390 #main-wrapper {
+  background-color: #fff; }
+
+.page-node-2294 .carnegie_container, .page-node-2390 #main-wrapper .carnegie_container {
+  margin: 0;
+  width: 100%; }
+
+.page-node-2294 .blurb-section, .page-node-2390 .blurb-section {
+  background-color: #f1f1f1;
+  padding: 30px; }
+
+.page-node-2294 .donate-section, .page-node-2390 .donate-section {
+  padding: 30px; }
+
+@media screen and (max-width: 920px) {
+  .page-node-2294 header #header .carnegie_container h1, .page-node-2390 header #header .carnegie_container h1 {
+    display: none; } }
+.page-node-2294 .views_slideshow_cycle_slide, .page-node-2330 .views_slideshow_cycle_slide {
+  width: 100% !important;
+  height: auto !important;
+  display: inline-block; }
+
+.page-node-2294 #vscc_controls_honor_roll-block_1, .page-node-2294 #views_slideshow_cycle_teaser_section_honor_roll-block_1 {
+  text-align: center !important; }
+
+.page-node-2330 #vscc_controls_honor_roll-block_1, .page-node-2330 #views_slideshow_cycle_teaser_section_honor_roll-block_1 {
+  text-align: center !important; }
+
+.page-node-2294 #views_slideshow_cycle_teaser_section_honor_roll-block_1, .page-node-2330 #views_slideshow_cycle_teaser_section_honor_roll-block_1 {
+  width: auto !important;
+  margin: 0 auto; }
+
+.normal-logo {
+  max-width: 150px; }
+
+/*# sourceMappingURL=wedding.css.map */

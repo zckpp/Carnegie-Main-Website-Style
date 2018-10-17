@@ -1,0 +1,329 @@
+.view{
+    .view-header .pane-title{
+	text-transform:uppercase;
+	font-size:18px;
+    }
+    .views-row{
+	background: none repeat scroll 0 0 #fff;
+	float: left;
+	margin: 0 0 25px;
+	width: 100%;
+	position:relative;
+	.item-flag{
+	    margin:0;
+	    a{
+		background: none repeat scroll 0 0 $red;
+		color: #fff;
+		font-size: 11px;
+		font-weight: bold;
+		left: 0;
+		padding: 3px 25px 3px 45px;
+		position: absolute;
+		text-transform: uppercase;
+		top: 0;
+	    }
+	    a:hover,a.active{
+		color:#fff !important;
+		opacity:0.85 !important;
+	    }
+	}
+	.views-field-field-scientific-area.item-flag{
+	    a{
+		padding: 3px 25px 3px 45px;
+	    }
+	}
+	
+	.item-content{
+	    float:left;
+	    width:57%;
+	    margin:30px 4% 50px;
+	    @include breakpoint(medium){
+			margin: 30px 4% 60px;
+			width: 69%;
+			margin:30px 3% 50px;
+	    }
+	    @include breakpoint(small){
+			margin: 30px 4% 60px;
+			width: 92%;
+	    }
+	    .explore-story{
+		a{
+		    background: url("../images/explore_icon.png") no-repeat scroll right top transparent;
+		    bottom: 20px;
+		    color: #444;
+		    display: block;
+		    padding: 1px 35px 3px 3px;
+		    position: absolute;
+		    right: 4%;
+		    text-align: right;
+		}
+		a:hover{
+		    background-position:right bottom;
+		    color:#333 !important;
+		    text-shadow:1px 1px 1px #ccc;
+		}
+	    }
+	}
+	
+	.views-field-title{
+	    margin: 15px 0 5px 0;
+	    font-family: roboto slab;
+		font-size: 25px;
+		text-transform: none;
+		color:#454545;
+		line-height:31px;
+		font-weight:bold;
+	    a{
+			font-family: roboto slab;
+			font-size: 25px;
+			text-transform: none;
+			color:#454545;
+			line-height:31px;
+			font-weight:bold;
+			@include breakpoint(small){
+				font-size:20px;
+				line-height:18px;
+			}
+	    }
+	}
+	
+	.views-field-field-main-image{
+	    float:left;
+	    width:35%;
+	    line-height:0;
+	    @include breakpoint(medium){
+	    	width:25%;
+	    }
+	    @include breakpoint(small){
+		width:100%;
+	    }
+	    img{
+		width:100%;
+		height:auto;
+	    }
+	}
+	.views-field-field-profile-picture{
+		width:20%;
+		float:left;
+		line-height:0;
+		@include breakpoint(small){
+			width:100%;
+	    }
+	    img{
+			width:100%;
+			height:auto;
+	    }
+	}
+	.flag-1{
+	    a{
+		background:url("../images/astronomy_icon.png") no-repeat scroll 15px center $purple;
+	    }
+	}
+	.flag-2{
+	    a{
+		background:url("../images/earth_icon.png") no-repeat scroll 15px center $orange;
+	    }
+	}
+	.flag-3{
+	    a{
+		background:url("../images/genetics_icon.png") no-repeat scroll 15px center $pink;
+	    }
+	}
+	.flag-4{
+	    a{
+		background:url("../images/ecology_icon.png") no-repeat scroll 15px center$yellow;
+	    }
+	}
+	.flag-5{
+	    a{
+		background:url("../images/matter_icon.png") no-repeat scroll 15px center $red;
+	    }
+	}
+	.flag-6{
+	    a{
+		background:url("../images/plant_icon.png") no-repeat scroll 15px center $green;
+	    }
+	}
+	.flag-7{
+	    a{
+		background:url("../images/education_icon.png") no-repeat scroll 15px center $blue;
+	    }
+	}
+	
+    }
+    .list-view{
+	margin-bottom:0;
+	padding:0px 30px;
+	.views-field-title{
+	    border-bottom:2px solid $beige;
+	    margin-bottom:0;
+	    padding:15px 0;
+
+	    a{
+		color: #777;
+		font-family: lato;
+		font-size: 16px;
+		padding: 15px 0;
+	    }
+	}
+    }
+    .views-row-last.list-view{
+	.views-field-title{
+	    border:none;
+	}
+    }
+
+    .view-filters{
+    	margin-bottom:20px;
+    	width:100%;
+    	float:left;
+    	
+		.form-type-select{
+			background: url("../images/select.png") no-repeat scroll right 5px #fff;
+			overflow:hidden;
+			padding-right: 20px;
+		}
+    	.form-item {
+			
+		}
+    	select{
+    		display:inline-block;
+			color: #8c8c8c;
+			float:left;
+			font-size:12px;
+			padding: 10px;
+			z-index:9999;
+			cursor:pointer;
+			background: transparent;
+			border: none;
+			width:120%;
+			max-width:none !important;
+			-webkit-appearance: none;
+			background:none;
+    	}
+    }
+
+
+
+
+.styled-select select option { line-height:30px; }
+
+.styled-select select:focus {
+	outline: none;
+	box-shadow:none !important;
+}
+
+/* Hide Default */
+.styled-select .hider {
+	background: none repeat scroll 0 0 #ffffff;
+	float: right !important;
+	height: 40px;
+	position: absolute;
+	right: 0;
+	width: 20px;
+}
+
+.styled-select .fa-sort-desc {
+	position: absolute;
+	text-align:center;
+	top: 10px;
+	right: 15px;
+	font-size: 15px;
+	cursor:pointer;
+	z-index: 12;
+	color: #cc9999 !important;
+}
+
+}
+.list-view-block{
+    margin-bottom:20px;
+    float:left;
+    .pane-title{
+	margin-bottom:0;
+    }
+    .view-content{
+	background: none repeat scroll 0 0 #fff;
+	float: left;
+	padding: 10px 0;
+    }
+    
+}
+
+.view-scientists{
+	@include breakpoint(medium){
+		.views-row{
+			.item-flag a{
+				left:20%;
+			}
+		}
+	}
+	@include breakpoint(small){
+		.views-row{
+			.item-content{
+				float: left;
+			    margin: 30px 4% 60px;
+			    width: 72%;
+			}
+			.views-field-field-profile-picture {
+			    float: left;
+			    line-height: 0;
+			    width: 20%;
+			    margin-top:25px;
+			}
+			.item-flag a{
+				left:0;
+			}
+		}
+	}
+}
+
+.view-events,#main-wrapper .view-nodequeue-24.view-display-id-block_3{
+	.views-row{
+		@include breakpoint(medium){
+			.views-field-field-main-image{
+			    margin-top:25px;
+			}
+		}
+
+		@include breakpoint(small){
+			
+				.views-field-field-main-image{
+				    margin-top:25px;
+				}
+				.item-flag a{
+					left:0;
+					right:auto;
+				}
+		}
+	}
+}
+
+
+.panels-flexible-14 {
+	width: auto;
+	height: 0;
+}
+
+	.view-nodequeue-9.view-display-id-block_1{
+		@include breakpoint(medium){
+			.views-row{
+				width: 105%;
+				margin: -30px 0 30px -2.55%;
+				padding: 20px 20px 30px 20px;
+				.item-content{
+					width:90%;
+				}
+			}
+		}
+
+
+	@include breakpoint(small){
+		.views-row{
+			width:111%;
+			margin:-30px 0 30px -5.55%;
+			.item-content{
+				width:90%;
+			}
+		}
+	}
+}

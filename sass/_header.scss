@@ -1,0 +1,1417 @@
+header{
+    .featured{
+	position:relative;
+	top:0;
+	left:0;
+	.item-img{
+	    position:relative;
+	    line-height:0;
+	    img{
+			width:100%;
+			min-height:300px;
+	    }
+	    .region-home-featured{
+			position:absolute;
+			line-height:20px;
+			width:90%;
+			.views-row{
+			    width:50%;
+			    .item-content{
+				width:88%;
+				margin:55px 4% 20px;
+				.expand a{
+				    top:10px;
+				    bottom:auto;
+				}
+			    }
+			}
+			@include breakpoint(medium){
+			    display:none;
+			}
+			@include breakpoint(small){
+			    display:none;
+			}
+	    }
+	    .box{
+			border:2px solid #fff;
+			position:absolute;
+			left:5%;
+			z-index:-1;
+			img{
+				min-height:0;
+				line-height:0;
+			}
+	    }
+	    .box.show-block{
+			z-index:1;
+			display:block;
+			@include breakpoint(medium){
+			    display:none;
+			}
+			@include breakpoint(small){
+				display:none;
+			}
+	    }
+	    .box-1.show-block{
+			-webkit-animation: box1 0.5s; /* Chrome, Safari, Opera */ 
+			animation: box1 0.5s;
+			width:230px;
+	    }
+	    .box-2.show-block{
+			-webkit-animation: box2 0.5s; /* Chrome, Safari, Opera */ 
+			animation: box2 0.5s;
+			width:145px;
+			
+	    }
+	    .box-3.show-block{
+			-webkit-animation: box3 0.5s; /* Chrome, Safari, Opera */ 
+			animation: box3 0.5s;
+			width:150px;
+	    }
+	    .box-4.show-block{
+			-webkit-animation: box4 0.5s; /* Chrome, Safari, Opera */ 
+			animation: box4 0.5s;
+		    background: none repeat scroll 0 0 #fff;
+		    font-size: 15px;
+		    font-weight: normal;
+		    line-height: 20px;
+		    padding: 10px 20px 25px;
+		    width: 38%;
+		    overflow:hidden;
+		    p{
+		    	overflow:hidden;
+		    }
+		    div{
+		    	text-transform:uppercase;
+		    	font-size:11px;
+		    	margin-bottom:5px;
+		    }
+	    }
+	    .box-5.show-block{
+			-webkit-animation: box5 0.5s; /* Chrome, Safari, Opera */ 
+			animation: box5 0.5s;
+			border:none;
+
+			a{
+				font-size:26px;
+				color:#fff;
+				font-family:roboto slab;
+				background:url("../images/explore_big_orange.png") no-repeat scroll right top transparent;
+				padding-right:45px;
+				padding-bottom:3px;
+			}
+			a:hover{
+				color:#E6A834 !important;
+				background-position:right bottom;
+			}
+	    }
+	    .explore-science{
+		a{
+		    background: url("../images/explore_science.png") no-repeat scroll 205px 26px rgba(0, 0, 0, 0.7);
+		    border-radius: 30px;
+		    color: #fff;
+		    font-weight: bold;
+		    right: 5%;
+		    padding: 30px 45px 30px 30px;
+		    position: absolute;
+		    text-shadow: 3px 4px 4px #333;
+		    text-transform: uppercase;
+    
+		    -webkit-transition: all 0.3s ease;
+		    -moz-transition: all 0.3s ease;
+		    -o-transition: all 0.3s ease;
+		    -ms-transition: all 0.3s ease;
+		    transition: all 0.3s ease;
+		}
+		a:hover{
+		    color:#fff !important;
+		    text-shadow:none;
+		}
+		@include breakpoint(medium){
+		    display:none;
+		}
+		@include breakpoint(small){
+		    display:none;
+		}
+	    }
+	
+	&.featured-flag-1{
+		.view .views-row{
+			background:none repeat scroll 0 0 $purple;
+			color:#fff;
+			.views-field-title{
+				a:hover{
+					color:#fff !important;
+				}
+			}
+			a{
+				color:#fff;
+			}
+			.flag-1{
+				a{
+					background:#fff;
+					color:$purple;
+				}
+			}
+			.expand{
+				a{
+					color:#fff;
+					background:url("../images/white_explore_icon.png") no-repeat scroll right top transparent;
+				}
+				a:hover{
+					color:#fff !important;
+				}
+			}
+		}
+		.box-4.show-block{
+			div{
+				color:$purple;
+			}
+		}
+	}
+	&.featured-flag-2{
+		.view .views-row{
+			background:none repeat scroll 0 0 $orange;
+			color:#fff;
+			.views-field-title{
+				a:hover{
+					color:#fff !important;
+				}
+			}
+			a{
+				color:#fff;
+			}
+			.flag-2{
+				a{
+					background:#fff;
+					color:$orange;
+				}
+			}
+			.expand{
+				a{
+					color:#fff;
+					background:url("../images/white_explore_icon.png") no-repeat scroll right top transparent;
+				}
+				a:hover{
+					color:#fff !important;
+				}
+			}
+		}
+		.box-4.show-block{
+			div{
+				color:$orange;
+			}
+		}
+	}
+	&.featured-flag-3{
+		.view .views-row{
+			background:none repeat scroll 0 0 $pink;
+			color:#fff;
+			.views-field-title{
+				a:hover{
+					color:#fff !important;
+				}
+			}
+			a{
+				color:#fff;
+			}
+			.flag-3{
+				a{
+					background:#fff;
+					color:$pink;
+				}
+			}
+			.expand{
+				a{
+					color:#fff;
+					background:url("../images/white_explore_icon.png") no-repeat scroll right top transparent;
+				}
+				a:hover{
+					color:#fff !important;
+				}
+			}
+		}
+		.box-4.show-block{
+			div{
+				color:$pink;
+			}
+		}
+	}
+	&.featured-flag-4{
+		.view .views-row{
+			background:none repeat scroll 0 0 $yellow;
+			color:#fff;
+			.views-field-title{
+				a:hover{
+					color:#fff !important;
+				}
+			}
+			a{
+				color:#fff;
+			}
+			.flag-4{
+				a{
+					background:#fff;
+					color:$yellow;
+				}
+			}
+			.expand{
+				a{
+					color:#fff;
+					background:url("../images/white_explore_icon.png") no-repeat scroll right top transparent;
+				}
+				a:hover{
+					color:#fff !important;
+				}
+			}
+		}
+		.box-4.show-block{
+			div{
+				color:$yellow;
+			}
+		}
+	}
+	&.featured-flag-5{
+		.view .views-row{
+			background:none repeat scroll 0 0 $red;
+			color:#fff;
+			.views-field-title{
+				a:hover{
+					color:#fff !important;
+				}
+			}
+			a{
+				color:#fff;
+			}
+			.flag-5{
+				a{
+					background:#fff;
+					color:$red;
+				}
+			}
+			.expand{
+				a{
+					color:#fff;
+					background:url("../images/white_explore_icon.png") no-repeat scroll right top transparent;
+				}
+				a:hover{
+					color:#fff !important;
+				}
+			}
+		}
+		.box-4.show-block{
+			div{
+				color:$red;
+			}
+		}
+
+	}
+	&.featured-flag-6{
+		.view .views-row{
+			background:none repeat scroll 0 0 $green;
+			color:#fff;
+			.views-field-title{
+				a:hover{
+					color:#fff !important;
+				}
+			}
+			a{
+				color:#fff;
+			}
+			.flag-6{
+				a{
+					background:#fff;
+					color:$green;
+				}
+			}
+			.expand{
+				a{
+					color:#fff;
+					background:url("../images/white_explore_icon.png") no-repeat scroll right top transparent;
+				}
+				a:hover{
+					color:#fff !important;
+				}
+			}
+		}
+		.box-4.show-block{
+			div{
+				color:$green;
+			}
+		}
+	}
+	&.featured-flag-7{
+		.view .views-row{
+			background:none repeat scroll 0 0 $blue;
+			color:#fff;
+			.views-field-title{
+				a:hover{
+					color:#fff !important;
+				}
+			}
+			a{
+				color:#fff;
+			}
+			.flag-7{
+				a{
+					background:#fff;
+					color:$blue;
+				}
+			}
+			.expand{
+				a{
+					color:#fff;
+					background:url("../images/white_explore_icon.png") no-repeat scroll right top transparent;
+				}
+				a:hover{
+					color:#fff !important;
+				}
+			}
+		}
+		.box-4.show-block{
+			div{
+				color:$blue;
+			}
+		}
+	}
+	}
+    }
+    
+    #header{
+	padding:10px 0;
+	border-bottom:2px solid $beige;
+	#mobile-menu{
+		position:relative;
+		z-index:9999;
+	}
+	ul.mobile-menu{
+	    background: none repeat scroll 0 0 #333;
+	    box-shadow: 0 0 6px #000;
+	    left: 0;
+	    margin: 0 0 0 -5.5%;
+	    max-height: 0;
+	    opacity: 0.99;
+	    overflow: hidden;
+	    padding: 0;
+	    position: absolute;
+	    top: 80px;
+	    transition: all 0.3s ease 0s;
+	    width: 111%;
+	    z-index: 9999;
+	    
+	    &.is-open{
+		max-height:100em;
+	    }
+	    
+	    li{
+		a{
+		    border-bottom: 1px solid #555;
+		    color: #fff;
+		    display: block;
+		    font-size: 18px;
+		    font-weight: 300;
+		    padding: 20px 0 13px;
+		    text-align: center;
+		    width: 100%;
+		}
+		
+		a:hover{
+		    background:$red;
+		    color:#fff !important;
+		}
+	    }
+	}
+	.logo-container{
+	    float:left;
+	    width:225px;
+	    @include breakpoint(normal) {
+		width:180px;
+	    }
+	    .normal-logo{
+	    	@include breakpoint(medium){
+			    display:none;
+			}
+			@include breakpoint(small){
+			    display:none;
+			}
+		
+	    }
+	}
+	.header-top{
+	    float:left;
+	    margin-top:24px;
+	    @include breakpoint(medium){
+			display:none;
+		}
+	    @include breakpoint(small) {
+			display:none;
+	    }
+	    li{
+		float:left;
+		padding:0;
+	    }
+	    a{
+		text-transform:uppercase;
+	    }
+	    .menu-1377{
+		margin-left:15px;
+		a{
+		    background: url("../images/search_icon.png") no-repeat scroll center bottom rgba(0, 0, 0, 0);
+		    font-size: 0;
+		    padding: 3px 9px;
+		}
+	    }
+	}
+	a{
+	    float: left;
+	    font-family: "HammersmithOne Regular";
+	    font-size: 16px;
+	    padding: 10px 10px 6px;
+	}
+	#main-menu{
+	    float: right;
+	    margin-top: 24px;
+	    @include breakpoint(medium){
+			    display:none;
+			}
+	    @include breakpoint(small) {
+		display:none;
+	    }
+	    li{
+		float:left;
+		a{
+		    -webkit-transition: all 0.5s ease;
+		    -moz-transition: all 0.5s ease;
+		    -o-transition: all 0.5s ease;
+		    -ms-transition: all 0.5s ease;
+		    transition: all 0.5s ease;
+		}
+	    }
+	}
+	.give{
+	    display: block;
+	    float: right;
+	    margin-left: 20px;
+	    margin-top: 17px;
+	    @include breakpoint(medium){
+			    display:none;
+			}
+	    @include breakpoint(small) {
+		display:none;
+	    }
+	    a{
+		background: url("../images/give.png") no-repeat scroll 17px center #aa031f;
+		border: 2px solid #aa031f;
+		color: #fff;
+		font-size: 16px;
+		font-weight: bold;
+		padding: 15px 23px 15px 58px;
+		-webkit-transition: all 0.3s ease;
+		-moz-transition: all 0.3s ease;
+		-o-transition: all 0.3s ease;
+		-ms-transition: all 0.3s ease;
+		transition: all 0.3s ease;
+	    }
+	    a:hover{
+		background:url("../images/red_give.png") no-repeat scroll 17px center #fff;
+		border:2px solid $red;
+	    }
+	}
+    }
+    
+    
+    // White header
+    
+    #header.white-header{
+	#pull{
+	    @include breakpoint(medium){
+			    display:block;
+			}
+	    @include breakpoint(small){
+		display:block;
+	    }
+	}
+	.header-menus{
+        border-bottom: 1px solid rgba(255,255,255,0.3);
+	    padding:10px 0;
+
+		@media only screen and (max-width: 1225px) and (min-width: 1060px){
+		    border-bottom: none;
+		}
+
+	    @include breakpoint(medium){
+	    	background:#fff;
+	    }
+	    @include breakpoint(small){
+	    	background:#fff;
+	    }
+	}
+	.header-top{
+	    .menu-1377{
+		margin-top:8px;
+		a{
+		    background: url("../images/search_icon.png") no-repeat scroll center top rgba(0, 0, 0, 0);
+		    
+		}
+	    }
+	}
+	.give{
+	    a{
+		background:url("../images/give.png") no-repeat scroll 17px center;
+		border:2px solid #fff;
+	    }
+	    a:hover{
+		background:url("../images/red_give.png") no-repeat scroll 17px center #fff;
+		border:2px solid #fff;
+	    }
+	    
+	}
+	a{
+	    color:#fff;
+	}
+	li a:hover{
+	    color:#333;
+	    background:#fff;
+	}
+	#main-menu.white-links{
+	    li{
+		
+	    }
+	}
+
+
+
+
+	.social-bar{
+	    background:rgba(0,0,0,0.4);
+	    color:#fff;
+	    padding:28px 0 32px;
+
+		@media only screen and (max-width: 1225px) and (min-width: 1060px){
+		    display: none;
+		}
+
+	    @include breakpoint(medium){
+	    	display:none;
+	    }
+	    @include breakpoint(small){
+	    	display:none;
+	    }
+	    .social-text{
+			width:50%;
+			float:left;
+			margin-right:2%;
+			font-size:24px;
+			font-family:roboto slab;
+			line-height:30px;
+			@include breakpoint(medium){
+			    width:100%;
+			}
+			@include breakpoint(small){
+			    width:100%;
+			}
+	    }
+	    .social-media{
+			float:right;
+			width:30%;
+			a{
+			    border: 2px solid;
+			    border-radius: 50%;
+			    float: right;
+			    margin-left: 20px;
+			    padding: 28px;
+			}
+			a.facebook{
+			    background:url("../images/facebook.png") no-repeat scroll 23px 17px rgba(0, 0, 0, 0);
+			}
+			a.twitter{
+			    background:url("../images/twitter.png") no-repeat scroll 17px 20px rgba(0, 0, 0, 0);
+			}
+			a.google{
+			    background:url("../images/google.png") no-repeat scroll 18px 19px rgba(0, 0, 0, 0);
+			}
+			a.youtube{
+			    background:url("../images/youtube.png") no-repeat scroll 3px 19px rgba(0, 0, 0, 0);
+			}
+			a.instagram{
+			    background:url("../images/instagram.png") no-repeat scroll 15px 15px rgba(0, 0, 0, 0);
+			}
+			a:hover{
+			    	
+			}
+			@include breakpoint(medium){
+				    display:none;
+				}
+			@include breakpoint(small){
+			    display:none;
+			}
+	    }
+	    
+	}
+    }
+}
+
+.front{
+    header{
+	#header.white-header{
+	    position:fixed;
+	    top:0;
+	    left:0;
+	    width:100%;
+	    padding:0;
+	    border:none;
+	    z-index:9;
+	}
+    }
+}
+
+#banner{
+		background:#333;
+		position:relative;
+
+
+		.block-menu-block{
+			h2{
+				background: none repeat scroll 0 0 #aa031f;
+			    color: #fff;
+			    float: left;
+			    font-family: lato;
+			    font-size: 18px;
+			    font-weight: normal;
+			    height: 75px;
+			    line-height: 22px;
+			    padding: 15px 30px 15px 20px;
+			    width: 20%;
+			    display:none;
+			    @include breakpoint(medium){
+				    display:none;
+				}
+			    @include breakpoint(small) {
+				    display:none;
+				}
+			}
+			ul li{
+				display: table;
+			    float: left;
+			    list-style: outside none none;
+			    margin-left: 0;
+			    padding: 0;
+			    text-align: center;
+			    width: 20%;
+			    @include breakpoint(small){
+				    width:100%;
+				}
+				a{
+					box-shadow: 2px 0 1px #eee;
+				    display: block;
+				    font-family: hammersmith one;
+				    font-size: 13px;
+				    height: 75px;
+				    line-height: 15px;
+				    text-transform: uppercase;
+				    padding-top:30px;
+				    border-top:5px solid $red;
+				    padding:30px 20px 0;
+				    
+				    &:hover{
+						background:#f7f7f7;
+					}
+
+				    @include breakpoint(small){
+				    	height:40px;
+				    	padding-top:15px;
+				    	border-top:none;
+				    	&:hover{
+				    		background:$red;
+				    		color:#fff !important;
+				    	}
+				    }
+				}
+				&.last a{
+					box-shadow:none;
+					@include breakpoint(small){
+						box-shadow:2px 0 1px #eee;
+					}
+				}
+				ul{
+					background: none repeat scroll 0 0 #aa031f;
+				    display: none;
+				    margin-left: 0;
+				    position: absolute;
+				    z-index:9999;
+				    width:20%;
+				    
+					li{
+						width:100%;
+						a{
+							border-bottom: 1px solid #B8001E;
+						    border-top: medium none;
+						    box-shadow: none;
+						    color: #fff;
+						    height:auto !important;
+						    padding:15px 20px;
+
+						}
+						a.active{
+							color:#fff !important;
+						}
+						a.active:hover{
+							color:$red !important;
+						}
+					}
+				}
+				&:hover ul{
+
+				}
+
+			}
+		}
+
+
+		.banner-image{
+			width:100%;
+			overflow:hidden;
+			img{
+				position:absolute;
+				width:auto;
+				min-height:100%;
+				min-width:100%;
+				height:auto;
+			}
+		}
+		.banner-slider{
+			position:relative;
+			z-index:9;
+
+		}
+	.banner{
+	    position:relative;
+	    
+		z-index:9;
+		&.with-banner-image{
+			overflow:hidden;
+		}
+		.banner-content{
+			float:left;
+			width:100%;
+			@include breakpoint(medium){
+			    display:none;
+			}
+			@include breakpoint(small){
+				display:none;
+			}
+			background: url("../images/explore_menu_bg.png") repeat-x scroll 0 0 #fff;
+			#block-menu-menu-explore-our-science{
+			    h2{
+				background: url("../images/explore_title.png") no-repeat scroll 0 90% transparent;
+				float: left;
+				font-size: 0;
+				margin-left: 2%;
+				margin-top: 21px;
+				width: 12%;
+				height:48px;
+				@include breakpoint(medium){
+				    display:none;
+				}
+				@include breakpoint(small){
+				    display:none;
+				}
+			    }
+			    .content{
+				float:left;
+				width:86%;
+				@include breakpoint(medium){
+				    width:100%;
+				}
+				@include breakpoint(small){
+				    width:100%;
+				}
+			    }
+			    ul{
+				box-shadow:-2px 0 1px #eee;
+				float:right;
+				@include breakpoint(small){
+				    width:100%;
+				}
+				li{
+				    float:left;
+				    list-style:none;
+				    margin:0;
+				    padding:0;
+				    @include breakpoint(small){
+						width:100%;
+				    }
+				     a{
+						box-shadow:2px 0 1px #eee;
+						display: table-cell;
+						font-family: hammersmith one;
+						font-size: 13px;
+						height: 90px;
+						padding: 0 12px;
+						text-transform: uppercase;
+						vertical-align: middle;
+						width: 123px;
+						line-height:15px;
+						@include breakpoint(small){
+						    width:100%;
+						    display:block;
+						    height:50px !important;
+						    border-top:none !important;
+						    padding:20px 20px 20px 80px;
+						}
+				     }
+				    
+				    a:hover,a.active{
+					color:#fff !important;
+					-webkit-transition: all 0.5s ease;
+					-moz-transition: all 0.5s ease;
+					-o-transition: all 0.5s ease;
+					-ms-transition: all 0.5s ease;
+					transition: all 0.5s ease;
+					@include breakpoint(small){
+					    padding:20px 30px;
+					}
+				    }
+				    .astronomy{
+					border-top:8px solid $purple;
+					@include breakpoint(small){
+					    background:url("../images/mobile_astro.png") no-repeat scroll 20px 6px rgba(0, 0, 0, 0);
+					}
+				    }
+				    .astronomy:hover,.astronomy.active{
+					background:$purple;
+				    }
+				    .earth{
+					border-top:8px solid $orange;
+					@include breakpoint(small){
+					    background:url("../images/mobile_earth.png") no-repeat scroll 20px 6px rgba(0, 0, 0, 0);
+					}
+				    }
+				    .earth:hover,.earth.active{
+					background:$orange;
+				    }
+				    .genetics{
+					border-top:8px solid $pink;
+					@include breakpoint(small){
+					    background:url("../images/mobile_genetics.png") no-repeat scroll 20px 6px rgba(0, 0, 0, 0);
+					}
+				    }
+				    .genetics:hover,.genetics.active{
+					background:$pink;
+				    }
+				    .ecology{
+					border-top:8px solid $yellow;
+					@include breakpoint(small){
+					    background:url("../images/mobile_ecology.png") no-repeat scroll 20px 6px rgba(0, 0, 0, 0);
+					}
+				    }
+				    .ecology:hover,.ecology.active{
+					background:$yellow;
+				    }
+				    .matter{
+					border-top:8px solid $red;
+					@include breakpoint(small){
+					    background:url("../images/mobile_matter.png") no-repeat scroll 20px 6px rgba(0, 0, 0, 0);
+					}
+				    }
+				    .matter:hover,.matter.active{
+					background:$red;
+				    }
+				    .plant{
+					border-top:8px solid $green;
+					@include breakpoint(small){
+					    background:url("../images/mobile_plant.png") no-repeat scroll 20px 6px rgba(0, 0, 0, 0);
+					}
+				    }
+				    .plant:hover,.plant.active{
+					background:$green;
+				    }
+				    .education{
+					border-top:8px solid $blue;
+					@include breakpoint(small){
+					    background:url("../images/mobile_education.png") no-repeat scroll 20px 6px rgba(0, 0, 0, 0);
+					}
+				    }
+				    .education:hover,.education.active{
+					background:$blue;
+				    }
+				}
+				li.first{
+				    a{
+				    }
+				}
+				li.last{
+				    a{
+					box-shadow:none;
+					@include breakpoint(small){
+					    box-shadow:2px 0 1px #eee;
+					}
+				    }
+				}
+			    }
+			}
+		}
+		.banner-content.fixed{
+		    margin: 0 auto;
+		    position: fixed;
+		    top: 0;
+		    width: 90%;
+		    z-index: 1;
+		    @include breakpoint(small){
+			position:relative;
+		    }
+		    
+		    #block-menu-menu-explore-our-science{
+			h2{
+			    margin-top:10px;
+			}
+			 ul li a{
+			    background:none;
+			    padding-top:0;
+			}
+			
+		    }
+		    .site-header-minimize {
+			
+		    }
+		    @include breakpoint(normal) {
+			width:98%;
+		    }
+		}
+		.banner-second{
+			color: #fff;
+			float: left;
+			margin: 35px 0px;
+			width: 100%;
+			.banner-title{
+				float:left;
+				background: url("../images/title_icon.png") no-repeat scroll left bottom transparent;
+				padding: 10px 75px 0;
+				margin-top:0px;
+				width:70%;
+				@include breakpoint(medium){
+					width:100%;
+				}
+				@include breakpoint(small){
+					width:100%;
+				}
+				h1{
+				    line-height: 31px;
+				    margin: 0;
+				}
+				h4{
+				    color: #fff;
+				    font-family: lato;
+				    font-size: 17px;
+				    font-weight: normal;
+				    position: relative;
+				    top: -12px;
+				}
+			}
+		}
+	}
+}
+
+.social-media{
+    float:right;
+    width:30%;
+    @include breakpoint(medium){
+	display:none;
+    }
+    @include breakpoint(small){
+	display:none;
+    }
+    a{
+        border: 2px solid;
+	border-radius: 50%;
+	float: right;
+	margin-left: 3%;
+	padding: 28px;
+	color:#fff;
+	
+    }
+    a.facebook{
+	background:url("../images/facebook.png") no-repeat scroll 23px 17px rgba(0, 0, 0, 0);
+    }
+    a.twitter{
+	background:url("../images/twitter.png") no-repeat scroll 17px 20px rgba(0, 0, 0, 0);
+    }
+    a.google{
+        background:url("../images/google.png") no-repeat scroll 18px 19px rgba(0, 0, 0, 0);
+    }
+	a.youtube{
+	    background:url("../images/youtube.png") no-repeat scroll 3px 19px rgba(0, 0, 0, 0);
+	}
+	a.instagram{
+	    background:url("../images/instagram.png") no-repeat scroll 15px 15px rgba(0, 0, 0, 0);
+	}
+    a:hover{
+	-webkit-transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+	-o-transform: rotate(360deg);
+	-ms-transform: rotate(360deg);
+	transform: rotate(360deg);
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	color:#fff !important;
+    }
+}
+
+#banner.home-banner{
+    background:$beige_bg;
+    .banner{
+	.banner-content{
+	    #block-menu-menu-explore-our-science{
+		ul{
+		    li{
+			a{
+			    height: 190px;
+			    padding-top: 125px;
+			    border:none;
+			    @include breakpoint(small){
+				height:50px !important;
+				padding:20px 20px 20px 80px;
+			    }
+			}
+			a:hover{
+			    box-shadow:none;
+			    @include breakpoint(small){
+				padding:20px 30px;
+			    }
+			}
+			.astronomy {
+			    background: url("../images/astronomy_menu.png") no-repeat scroll center top rgba(0, 0, 0, 0);
+			    @include breakpoint(small){
+				background:url("../images/mobile_astro.png") no-repeat scroll 20px 6px rgba(0, 0, 0, 0);
+			    }
+			}
+			.astronomy:hover{
+			    background:url("../images/astronomy_hover.png") no-repeat scroll center top $purple;
+			    @include breakpoint(small){
+				background:$purple;
+			    }
+			}
+			.earth {
+			    background: url("../images/earth_menu.png") no-repeat scroll center top rgba(0, 0, 0, 0);
+			    @include breakpoint(small){
+				background:url("../images/mobile_earth.png") no-repeat scroll 20px 6px rgba(0, 0, 0, 0);
+			    }
+			}
+			.earth:hover {
+			    background: url("../images/earth_hover.png") no-repeat scroll center top $orange;
+			    @include breakpoint(small){
+				background:$orange;
+			    }
+			}
+			.genetics{
+			    background: url("../images/genetics_menu.png") no-repeat scroll center top rgba(0, 0, 0, 0);
+			    @include breakpoint(small){
+				background:url("../images/mobile_genetics.png") no-repeat scroll 20px 6px rgba(0, 0, 0, 0);
+			    }
+			}
+			.genetics:hover{
+			    background: url("../images/genetics_hover.png") no-repeat scroll center top $pink;
+			    @include breakpoint(small){
+				background:$pink;
+			    }
+			}
+			.ecology{
+			    background: url("../images/ecology_menu.png") no-repeat scroll center top rgba(0, 0, 0, 0);
+			    @include breakpoint(small){
+				background:url("../images/mobile_ecology.png") no-repeat scroll 20px 6px rgba(0, 0, 0, 0);
+			    }
+			}
+			.ecology:hover{
+			    background: url("../images/ecology_hover.png") no-repeat scroll center top $yellow;
+			    @include breakpoint(small){
+				background:$yellow;
+			    }
+			}
+			.matter{
+			    background: url("../images/matter_menu.png") no-repeat scroll center top rgba(0, 0, 0, 0);
+			    @include breakpoint(small){
+				background:url("../images/mobile_matter.png") no-repeat scroll 20px 6px rgba(0, 0, 0, 0);
+			    }
+			}
+			.matter:hover{
+			    background: url("../images/matter_hover.png") no-repeat scroll center top $red;
+			    @include breakpoint(small){
+				background:$red;
+			    }
+			}
+			.plant{
+			    background: url("../images/plant_menu.png") no-repeat scroll center top rgba(0, 0, 0, 0);
+			    @include breakpoint(small){
+				background:url("../images/mobile_plant.png") no-repeat scroll 20px 6px rgba(0, 0, 0, 0);
+			    }
+			}
+			.plant:hover{
+			    background: url("../images/plant_hover.png") no-repeat scroll center top $green;
+			    @include breakpoint(small){
+				background:$green;
+			    }
+			}
+			.education{
+			    background: url("../images/education_menu.png") no-repeat scroll center top rgba(0, 0, 0, 0);
+			    @include breakpoint(small){
+				background:url("../images/mobile_education.png") no-repeat scroll 20px 6px rgba(0, 0, 0, 0);
+			    }
+			}
+			.education:hover{
+			    background: url("../images/education_hover.png") no-repeat scroll center top $blue;
+			    @include breakpoint(small){
+				background:$blue;
+			    }
+			}
+		    }
+		}
+	    }
+	}
+	.banner-content.fixed{
+		    margin: 0 auto;
+		    position: fixed;
+		    top: 0;
+		    width: 90%;
+		    z-index: 1;
+		    @include breakpoint(normal){
+				width:98%;
+		    }
+		    @include breakpoint(small){
+				position:relative;
+		    }
+		    
+		    #block-menu-menu-explore-our-science{
+			h2{
+			    margin-top:10px;
+			    height:48px;
+			}
+			 ul li{
+			    a{
+				background:none;
+				padding-top:0;
+			    }
+			    a:hover{
+				background-image:none;
+			    }
+			    .astronomy{
+					border-top:8px solid $purple;
+				    }
+				    
+				    
+				    .earth{
+					border-top:8px solid $orange;
+				    }
+				    
+				    .genetics{
+					border-top:8px solid $pink;
+				    }
+				    
+				    .ecology{
+					border-top:8px solid $yellow;
+				    }
+				    
+				    .matter{
+					border-top:8px solid $red;
+				    }
+				    
+				    .plant{
+					border-top:8px solid $green;
+				    }
+				    
+				    .education{
+					border-top:8px solid $blue;
+				    }
+				    
+			 }
+			
+		    }
+	}
+    }
+    
+}
+
+
+
+#main-wrapper #sidebar-left .sidebar-left-first{
+	.mobile-submenu{
+		display:none;
+		background:url("../images/select.png") no-repeat scroll right 8px #fff;
+		a{
+			color: #716f73;
+		    display: block;
+		    font-family: hammersmithone regular;
+		    font-size: 16px;
+		    padding: 10px 0;
+		    border-bottom:3px solid #f9f8f7;
+		}
+	}
+	@include breakpoint(small){
+		box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+	    margin-bottom: 0;
+	    padding: 6px 10px 0 20px;
+
+		.mobile-submenu{
+			display:block;
+		}
+
+		.region-sidebar-left-first {
+		    background: none repeat scroll 0 0 #fff;
+		    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+		    left: 5%;
+		    opacity: 0;
+		    padding: 0;
+		    position: absolute;
+		    transition: opacity 0.15s linear 0s;
+		    width: 90%;
+		    z-index: -1;
+		    &.show-dropdown{
+				opacity:1;
+				z-index:999;
+				h2{
+					display:none;
+				}
+			}
+			.block{
+				display:none;
+			}
+			.block:first-child{
+				display:block;
+			}
+		}
+
+		.region-sidebar-left-first li {
+		    display:block;
+		    font-size:16px;
+		}
+		 
+		.region-sidebar-left-first li a {
+		    padding:10px 30px;
+		    display:block;
+		}
+		 
+		.region-sidebar-left-first li a:hover, .region-sidebar-left-first .current-item a {
+		}
+
+	}
+	@include breakpoint(medium){
+		box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+	    margin-bottom: 0;
+	    padding: 6px 10px 0 20px;
+
+		.mobile-submenu{
+			display:block;
+		}
+
+		.region-sidebar-left-first {
+		    background: none repeat scroll 0 0 #fff;
+		    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+		    left: 5%;
+		    opacity: 0;
+		    padding: 0;
+		    position: absolute;
+		    transition: opacity 0.15s linear 0s;
+		    width: 90%;
+		    z-index: -1;
+		    &.show-dropdown{
+				opacity:1;
+				z-index:999;
+				h2{
+					display:none;
+				}
+			}
+			.block{
+				display:none;
+			}
+			.block:first-child{
+				display:block;
+			}
+		}
+
+		 
+		.region-sidebar-left-first li {
+		    display:block;
+		    font-size:16px;
+		}
+		 
+		.region-sidebar-left-first li a {
+		    padding:10px 30px;
+		    display:block;
+		}
+		 
+		.region-sidebar-left-first li a:hover, .region-sidebar-left-first .current-item a {
+		}
+
+	}
+}
+
+#pull{
+    background: url("../images/menu_icon.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    content: "";
+    display: none;
+    height: 30px;
+    position: absolute;
+    right: 5%;
+    top: 35px;
+    width: 30px;
+    @include breakpoint(medium){
+	display:block;
+    }
+    @include breakpoint(small){
+	display:block;
+    }
+}
+#mobile-search{
+	background: url("../images/mobile_search.png") no-repeat scroll center bottom transparent;
+    display: none;
+    font-size: 0;
+    padding: 13px !important;
+    position: absolute;
+    right: calc(5% + 60px);
+    top: 32px;
+    @include breakpoint(medium){
+    	display:block;
+    }
+    @include breakpoint(small){
+    	display:block;
+    }
+}
+#pull.rotate{
+    -webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	transform: rotate(180deg);
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	-ms-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+}
+
+.normal-logo{
+    display:block;
+    @include breakpoint(medium){
+	display:none;
+    }
+    @include breakpoint(small){
+	display:none;
+    }
+}
+
+.mobile-logo{
+    display:none;
+    @include breakpoint(medium){
+	display:block;
+    }
+    @include breakpoint(small){
+	display:block;
+    }
+}
+
+
+.front #banner .banner .banner-content #block-menu-menu-explore-our-science h2{
+    height:169px;
+}
