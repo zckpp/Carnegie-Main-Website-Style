@@ -65,354 +65,66 @@
 </header>
 
 <div id="page-wrapper">
-    <div id="page" class="container">
-
-
-
-    <div class="blurb">
-
-        <!--    <div class="textWrapper">-->
-        <!--        <div class="textBox">-->
-        <!--            <label>Support our Science</label>-->
-        <!--            <p>-->
-        <!--                The Carnegie Institution for Science is home to some 65 senior researchers, postdoctoral fellows, technicians and other support staff who push the boundaries of the space, Earth and life sciences. For over 110 years this institution has supported individuals of exceptional ability and passion and given them the independence to pursue science in the entrepreneurial spirit that Andrew Carnegie saw as key to advancing the human condition.-->
-        <!--            </p>-->
-        <!--        </div>-->
-        <!---->
-        <!--    </div>-->
-        <div class="support">
-            <a href="#main-wrapper" id="supportL">
-                <p>
-                    Support Our Science
-                </p>
-            </a>
-        </div>
-
-    </div>
-
-    <section id="main-wrapper" class="clearfix">
-        <div id="main" class="carnegie_container clearfix">
-
-
-            <?php if ($messages): ?>
-                <div id="messages"><div class="section clearfix">
-                        <?php print $messages; ?>
-                    </div></div> <!-- /.section, /#messages -->
-            <?php endif; ?>
-
-            <?php if (($page['sidebar_left_first'])||($page['sidebar_left_second'])): ?>
-                <?php $donation = false;
-                if ((arg(0)=="node")&&(arg(1)>0)){
-                    $node = node_load(arg(1));
-                    if ($node->field_donation_content[LANGUAGE_NONE][0]['value']== "Yes")
-                        $donation = true;
-                }
-                ?>
-                <div id="sidebar-left" class="sidebar sidebar-left <?php if ($donation) print 'donation-page'; ?>">
-                    <?php if ($page['sidebar_left_first']): ?>
-                        <div class="sidebar-left-first">
-                            <div class="mobile-submenu">
-                                <a href="#"><?php print $title; ?></a>
-                            </div>
-                            <?php print render($page['sidebar_left_first']); ?>
-                        </div>
-                    <?php endif; ?>
-                    <?php if ($page['sidebar_left_second']): ?>
-                        <div class="sidebar-left-second">
-                            <?php if ($page['sidebar_left_second']) print render($page['sidebar_left_second']); ?>
-                        </div>
-                    <?php endif; ?>
-                </div> <!-- /.section, /#sidebar-first -->
-            <?php endif; ?>
-
-            <div id="content" class="column"><div class="section">
-                    <a id="main-content"></a>
-
-                    <!-- Start Donation Form -->
-                    <div class="giving-form col-xs-12">
-
-
-                        <form id="giftForm" action="/node/1828" method="post">
-
-                            <!-- Supported Project -->
-
-                            <div class="row">
-                                <div class="one-half col-md-6" >
-                                    <img style="max-width: 100%; height: auto" src="https://carnegiescience.edu/sites/default/files/donate/fund.jpg" alt="general fund">
-                                </div>
-
-                                <div class="one-half col-md-6">
-                                    <span for="giftSelection">Carnegie Fund</span>
-                                    <p>Donations to this category go to the institution’s greatest needs. Gifts to this fund provide us with important flexibility to support our scientists.</p>
-
-                                    <select id="giftSelection" name="project" class="form-control input-lg" autofocus style="display: none">
-
-                                        <option value="Carnegie Fund" selected>Carnegie Fund</option>
-
-                                    </select>
-
-
-                                    <div class="buttonWrap">
-
-                                        <div id="giftProjects" class="form-group">
-                                            <label for="giftRecurrence">Recurrence</label>
-                                            <select id="giftRecurrence" name="gift_recurrence" class="form-control input-lg">
-                                                <option value="One Time">One Time</option>
-                                                <option value="Monthly">Monthly</option>
-                                                <option value="Yearly">Yearly</option>
-                                            </select>
-                                        </div>
-
-
-                                    </div>
-                                    <input class="btn btn-default btn-danger btn-lg" name="Donate Now" type="submit" alt="Donate to Carnegie Science" value="Donate Now">
-
-                                    <!-- Recurring Options -->
-
-                                </div>
-
-
-                            </div>
-
-                            <div class="row">
-                                <div class="one-half col-md-6" >
-                                    <img style="max-width: 100%; height: auto" src="https://carnegiescience.edu/sites/default/files/donate/departmentA.jpg" alt="department">
-                                </div>
-
-                                <div class="one-half col-md-6">
-                                    <span for="giftSelection">Departments</span>
-                                    <p>Carnegie has six departments. Donations to the individual departments go to their greatest needs.</p>
-
-                                    <div class="buttonWrap">
-                                        <label for="project">Select Department</label>
-                                        <select  name="project" class="form-control input-lg">
-
-                                            <option disabled selected>--select from below--</option>
-                                            <?php
-                                            $project = array(
-                                                'Carnegie Academy for Science Education',
-                                                'Carnegie Observatories',
-                                                'Department of Embryology',
-                                                'Department of Global Ecology',
-                                                'Department of Plant Biology',
-                                                'Department of Terrestrial Magnetism',
-                                                'Geophysical Laboratory',
-                                            );
-                                            if ($_GET['department'] == 'case') {
-                                                $select = 'Carnegie Academy for Science Education';
-                                            }
-                                            elseif ($_GET['department'] == 'dpb') {
-                                                $select = 'Department of Plant Biology';
-                                            }
-                                            elseif ($_GET['department'] == 'dge') {
-                                                $select = 'Department of Global Ecology';
-                                            }
-                                            elseif ($_GET['department'] == 'obs') {
-                                                $select = 'Carnegie Observatories';
-                                            }
-                                            elseif ($_GET['department'] == 'gl') {
-                                                $select = 'Geophysical Laboratory';
-                                            }
-                                            elseif ($_GET['department'] == 'emb') {
-                                                $select = 'Department of Embryology';
-                                            }
-                                            elseif ($_GET['department'] == 'dtm') {
-                                                $select = 'epartment of Terrestrial Magnetism';
-                                            }
-                                            foreach ($project as $value) {
-                                                if ($select == $value) {
-                                                    echo '<option selected = "selected" value="'.$value.'">'.$value.'</option>';
-                                                }
-                                                else echo '<option value="'.$value.'">'.$value.'</option>';
-                                            }
-                                            ?>
-                                        </select>
-
-
-                                        <!-- Recurring Options -->
-                                        <div id="giftProjects" class="form-group">
-                                            <label for="giftRecurrence">Recurrence</label>
-                                            <select id="giftRecurrence" name="gift_recurrence" class="form-control input-lg">
-                                                <option value="One Time">One Time</option>
-                                                <option value="Monthly">Monthly</option>
-                                                <option value="Yearly">Yearly</option>
-                                            </select>
-                                        </div>
-
-                                    </div>
-                                    <input class="btn btn-default btn-danger btn-lg" name="Donate Now" type="submit" alt="Donate to Carnegie Science" value="Donate Now">
-
-                                </div>
-
-
-                            </div>
-
-                            <div class="row">
-                                <div class="one-half col-md-6" >
-                                    <img style="max-width: 100%; height: auto" src="https://carnegiescience.edu/sites/default/files/donate/fellowshipA.jpg" alt="fellowship">
-                                </div>
-
-                                <div class="one-half col-md-6">
-                                    <span for="giftSelection">Fellowships</span>
-                                    <p>Carnegie hosts over 150 postdoctoral fellows. Donations to these fellowships help strengthen science for future generations.</p>
-
-                                    <div class="buttonWrap">
-                                        <label for="project">Select Fellowship</label>
-                                        <select  name="project" class="form-control input-lg">
-
-                                            <option disabled selected>--select from below--</option>
-                                            <?php
-                                            $project = array(
-                                                'Marilyn Fogel Endowed Fund for Internships',
-                                                'Post-Doctoral Research Fund',
-                                                'Vera Rubin Fellowship'
-                                            );
-                                            foreach ($project as $value) {
-                                                echo '<option value="'.$value.'">'.$value.'</option>';
-                                            }
-                                            ?>
-                                        </select>
-
-
-                                        <!-- Recurring Options -->
-                                        <div id="giftProjects" class="form-group">
-                                            <label for="giftRecurrence">Recurrence</label>
-                                            <select id="giftRecurrence" name="gift_recurrence" class="form-control input-lg">
-                                                <option value="One Time">One Time</option>
-                                                <option value="Monthly">Monthly</option>
-                                                <option value="Yearly">Yearly</option>
-                                            </select>
-                                        </div>
-
-                                    </div>
-                                    <input class="btn btn-default btn-danger btn-lg" name="Donate Now" type="submit" alt="Donate to Carnegie Science" value="Donate Now">
-
-                                </div>
-
-
-                            </div>
-
-                            <div class="row">
-                                <div class="one-half col-md-6" >
-                                    <img style="max-width: 100%; height: auto" src="https://carnegiescience.edu/sites/default/files/donate/lecture.jpg" alt="lecture">
-                                </div>
-
-                                <div class="one-half col-md-6">
-                                    <span for="giftSelection">Public Lectures</span>
-                                    <p>Carnegie invites the best minds in science to give engaging talks. Your support of this scientific outreach will help introduce more individuals into the wonders of discovery.</p>
-
-                                    <div class="buttonWrap">
-                                        <label for="project">Select Lecture</label>
-                                        <select  name="project" class="form-control input-lg">
-
-                                            <option disabled selected>--select from below--</option>
-                                            <?php
-                                            $project = array(
-                                                'Astronomy Lecture Series',
-                                                'Broad Branch Road Lecture Series',
-                                                'Capital Science Lecture Series'
-                                            );
-                                            foreach ($project as $value) {
-                                                echo '<option value="'.$value.'">'.$value.'</option>';
-                                            }
-                                            ?>
-                                        </select>
-
-
-                                        <!-- Recurring Options -->
-                                        <div id="giftProjects" class="form-group">
-                                            <label for="giftRecurrence">Recurrence</label>
-                                            <select id="giftRecurrence" name="gift_recurrence" class="form-control input-lg">
-                                                <option value="One Time">One Time</option>
-                                                <option value="Monthly">Monthly</option>
-                                                <option value="Yearly">Yearly</option>
-                                            </select>
-                                        </div>
-
-                                    </div>
-                                    <input class="btn btn-default btn-danger btn-lg" name="Donate Now" type="submit" alt="Donate to Carnegie Science" value="Donate Now">
-
-                                </div>
-
-                            </div>
-
-                            <div class="row">
-                                <div class="one-half col-md-6" >
-                                    <img style="max-width: 100%; height: auto" src="https://carnegiescience.edu/sites/default/files/donate/projectB.jpg" alt="project">
-                                </div>
-
-                                <div class="one-half col-md-6">
-                                    <span for="giftSelection">Projects</span>
-                                    <p>Carnegie scientists engage in many different projects, from exploring the distant reaches of space to the wild world of the subatomic. You can support specific projects of your interest.</p>
-
-                                    <div class="buttonWrap">
-                                        <label for="project">Select Project</label>
-                                        <select  name="project" class="form-control input-lg">
-
-                                            <option disabled selected>--select from below--</option>
-                                            <?php
-                                            $project = array(
-                                                'BioEYES',
-                                                'Carnegie Airborne Observatory',
-                                                'Carnegie Astrometric Planet Search',
-                                                'Earthbound Planet Search Program',
-                                                'Giant Magellan Telescope Project',
-                                                'Ocean Acidification Research',
-                                                'Salinity and Plants',
-                                                'Scientific Computing',
-                                                'Visualizing Lipid Metabolism and Signaling',
-                                                'Water Quality'
-                                            );
-                                            foreach ($project as $value) {
-                                                echo '<option value="'.$value.'">'.$value.'</option>';
-                                            }
-                                            ?>
-                                        </select>
-
-
-                                        <!-- Recurring Options -->
-                                        <div id="giftProjects" class="form-group">
-                                            <label for="giftRecurrence">Recurrence</label>
-                                            <select id="giftRecurrence" name="gift_recurrence" class="form-control input-lg">
-                                                <option value="One Time">One Time</option>
-                                                <option value="Monthly">Monthly</option>
-                                                <option value="Yearly">Yearly</option>
-                                            </select>
-                                        </div>
-
-                                    </div>
-                                    <input class="btn btn-default btn-danger btn-lg" name="Donate Now" type="submit" alt="Donate to Carnegie Science" value="Donate Now">
-
-                                </div>
-                            </div>
-
-
-
-                        </form>
+    <div id="page">
+
+        <div class="donation-wrapper">
+
+            <div class="textBox">
+                <h1>Support</h1>
+
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" name="donate" onsubmit="return validate()" id="donate">
+                    <input id="cmd" name="cmd" type="hidden" value="_xclick">
+                    <input name="business" type="hidden" value="donations@ciw.edu">
+                    <input name="item_number" type="hidden" value="1">
+                    <input name="landing_page" type="hidden" value="billing">
+                    <input name="page_style" type="hidden" value="carnegieinstitution_org">
+                    <input name="no_shipping" type="hidden" value="2">
+                    <input name="no_note" type="hidden" value="1">
+                    <input name="return" type="hidden" value="https://carnegiescience.edu/donate/thank-you">
+                    <input name="cancel_return" type="hidden" value="http://carnegiescience.edu/support/giving/make_a_gift">
+                    <input name="currency_code" type="hidden" value="USD">
+                    <input name="tax" type="hidden" value="0">
+                    <input name="bn" type="hidden" value="PP-DonationsBF">
+                    <input name="src" type="hidden" value="1">
+                    <input id="p3" name="p3" type="hidden" value="1">
+                    <input id="a3" name="a3" type="hidden">
+                    <br>
+                    <div class="select">
+                        <select name="item_name" id="department">
+                            <option value="The Carnegie Fund" selected>Our Greatest Need</option>
+                            <option value="Carnegie Academy for Science Education">Carnegie Academy for Science Education</option>
+                            <option value="Carnegie Observatories">Carnegie Observatories</option>
+                            <option value="Department of Embryology">Department of Embryology</option>
+                            <option value="Department of Global Ecology">Department of Global Ecology</option>
+                            <option value="Department of Plant Biology">Department of Plant Biology</option>
+                            <option value="Department of Terrestrial Magnetism">Department of Terrestrial Magnetism</option>
+                            <option value="Geophysical Laboratory">Geophysical Laboratory</option>
+                        </select>
                     </div>
 
-
-
-                </div></div> <!-- /.section, /#content -->
-
-        </div></section> <!-- /#main, /#main-wrapper -->
-
-
-    <div class="blurb2">
-
-        <div class="textWrapper">
-            <div class="textBox">
-                <label>Contact Us</label>
-                <p>
-                    Advancement Office
-                    <br>202.939.1145
-                    <br>giving@carnegiescience.edu
-                </p>
+                    <!--donation amount-->
+                    <div class="amount">
+                        <input name="amount" onchange="ca.disabled = true;" type="radio" value="1000.00" id="b1000"><label for="b1000">&nbsp;$1,000</label>
+                        <input name="amount" onchange="ca.disabled = true;" type="radio" value="500.00" id="b500"><label for="b500">&nbsp;$500</label>
+                        <input name="amount" onchange="ca.disabled = true;" type="radio" value="250.00" id="b250"><label for="b250">&nbsp;$250</label>
+                        <input name="amount" onchange="ca.disabled = true;" type="radio" value="100.00" id="b100"><label for="b100">&nbsp;$100</label>
+                    <!--if custom amount checked, enable text input field-->
+                        <br>
+                        <input name="amount" onchange="ca = document.getElementById('custom_amount'); ca.value = ''; ca.disabled = false; ca.name = 'amount';" type="radio" id="other">
+                        <label for="other">Other: $ </label>
+                        <input disabled="disabled" id="custom_amount" name="amount_disabled" onchange="document.getElementById('a3').value = this.value;" required="" size="5" type="text">
+                    </div>
+                    <!--if recurrence, modify duration field p3: 24 for monthly and 5 for yearly-->
+                    <div class="recurrence">
+                        <span><input checked="checked" name="t3" type="radio" onchange="document.getElementById('p3').value = 1" id="once"><label for="once">&nbsp;One time </label></span>
+                        <span><input name="t3" type="radio" value="M" onchange="document.getElementById('p3').value = 24" id="month"><label for="month">&nbsp;Monthly </label></span>
+                        <span><input name="t3" type="radio" value="Y" onchange="document.getElementById('p3').value = 5" id="year"><label for="year">&nbsp;Yearly </label></span>
+                    </div>
+                    <p><Button class="donate-now btn" name="submit" type="submit">DONATE NOW</Button></p>
+                </form>
             </div>
 
         </div>
-
-    </div>
 
     <?php if ($page['content_bottom']): ?>
         <section id ="content-bottom" class="clearfix">

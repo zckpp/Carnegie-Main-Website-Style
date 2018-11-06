@@ -1,46 +1,167 @@
 /*Donate Landing Page redesign*/
 .page-node-1589 {
-  .blurb p {
-    font-family: "Lato";
-    font-size: 45px;
-    color: #fff;
-    padding-left: 90px;
-    padding-bottom: 22px;
-    text-shadow: 1px 2px 2px #000;
-    font-weight: bold;
+  //donation wrapper and background
+  .donation-wrapper {
+    text-align: center;
+    color: white;
+    background-image: url(https://carnegiescience.edu/sites/default/files/donate/lake.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:100vh;
+    position: relative;
+    //donation text block
+    .textBox {
+      top: 10%;
+      width: 50%;
+      position: relative;
+      margin: 0 auto;
+      -moz-border-radius: 4px;
+      -webkit-border-radius: 4px;
+      border-radius: 4px;
+      -moz-box-shadow: rgba(58, 58, 58, 0.5) 0 0 10px;
+      -webkit-box-shadow: rgba(58, 58, 58, 0.5) 0 0 10px;
+      box-shadow: rgba(58, 58, 58, 0.5) 0 0 10px;
+      background: rgba(104, 104, 104, 0.9);
+      padding: 30px;
+      text-align: center;
+      p {
+        font-family: "Lato";
+        font-size: 20px;
+        color: #fff;
+        font-weight: bold;
+      }
+      h1 {
+        text-shadow: 1px 2px 2px #000;
+        font-size: 4em;
+        padding-bottom: 10px;
+        @media screen and (max-width: 768px) {
+          font-size: 2em;
+        }
+      }
+      h2 {
+        padding-bottom: 30px;
+        @media screen and (max-width: 768px) {
+          font-size: 1em;
+        }
+      }
+      .btn {
+        margin-top: 30px;
+      }
+      //department select box
+      .select {
+        position: relative;
+        display: inline-block;
+        margin-bottom: 15px;
+        max-width: 100%;
+        &:after {
+          content: "";
+          position: absolute;
+          right: 10px;
+          top: 37%;
+          width: 0;
+          height: 0;
+          border-left: 8px solid transparent;
+          border-right: 8px solid transparent;
+          border-top: 12px solid #333;
+          pointer-events: none;
+        }
+        #department {
+          font-size: 1.2em;
+          max-width: 100%;
+          cursor: pointer;
+          padding: 10px 30px 10px 15px;
+          outline: 0;
+          border: 0;
+          border-radius: 0;
+          background: #e6e6e6;
+          color: #716F73;
+          &:hover, &focus {
+            color: #000;
+            background: #ccc;
+          }
+          option:hover, option:focus {
+            color: #000;
+            background: #ccc;
+            cursor: pointer;
+          }
+          /* Remove default arrow*/
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          -ms-appearance: none;
+          -o-appearance: none;
+          appearance: none;
+          &::-ms-expand {
+            display: none;
+          }
+          @media screen and (max-width: 768px) {
+            font-size: 12px;
+          }
+        }
+      }
+      //donate amount block
+      .amount {
+        //hide custom amount until radio button is checked
+        #custom_amount {
+          font-size: 1.5em;
+          display: none;
+        }
+        #other:checked + label + input {
+          display: inline;
+        }
+        input[type="radio"] {
+          display: none;
+          &:checked + label {
+            background-color: #fff;
+            color: #716F73;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 2px 20px 0 rgba(0,0,0,0.8);
+          }
+        }
+        label {
+          padding: 15px 0;
+          background-color: #5eb6cd;
+          margin: 0 10px 20px 0;
+          width: 100px;
+          &:hover {
+            cursor: pointer;
+            background-color: #fff;
+            color: #716F73;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 2px 20px 0 rgba(0,0,0,0.8);
+          }
+        }
+      }
+      //recurrence
+      .recurrence {
+        @media screen and (max-width: 500px) {
+          span {
+            display: block;
+            text-align: left;
+          }
+        }
+        label {
+          font-size: 16px;
+        }
+      }
+      //donate submit button
+      .donate-now {
+        background: #ff643a;
+        font-size: 1.2em;
+        color: white;
+        max-width: 100%;
+        @media screen and (max-width: 768px) {
+          font-size: 16px;
+        }
+      }
+    }
   }
   #page {
-    border-right: 1px solid #bbb;
-    border-bottom: 3px solid #163671;
-    border-left: 1px solid #bbb;
     background-color: #ffffff;
     padding: 0;
   }
   #page-wrapper {
     background: #dadada;
   }
-  .blurb2 {
-    label {
-      font-size: 45px;
-      color: white;
-      padding: 0 90px 20px;
-      border-bottom: 3px solid white;
-    }
-    p {
-      margin-top: 23px;
-      font-size: 25px;
-      line-height: 1.5;
-      font-weight: bold;
-    }
-  }
   p {
     padding: 0;
-  }
-  section#main-wrapper {
-    float: none;
-  }
-  .row {
-    margin-bottom: 20px;
   }
   #banner {
     background: none;
@@ -119,25 +240,16 @@
     display: none;
   }
 }
-
-@media screen and (max-width: 530px) {
-  .blurb p {
-    font-size: 30px;
-  }
-}
-
 .support {
   position: absolute;
   bottom: 100px;
   right: 20%;
 }
-
 .one-half span {
   font-size: 25px;
   display: block;
   margin: 10px 0;
 }
-
 select.input-lg {
   height: 25px;
   width: auto;
@@ -153,26 +265,10 @@ header #header ul.mobile-menu li a:hover {
 .one-half.col-md-6 p {
   width: 80%;
 }
-.textBox {
-  display: inline-block;
-  margin-top: 110px;
-  margin-bottom: 60px;
-}
-
-@media screen and (max-width: 670px) {
-  .page-node-1589 .blurb p {
-    padding-left: 0;
-    font-size: 30px;
-  }
-}
-
 @media screen and (max-width: 470px) {
   .page-node-1589 .btn.btn-default.btn-danger, .buttonWrap {
     float: none;
     margin-top: 0;
-  }
-  .textBox {
-    margin: 0;
   }
   .textWrapper {
     padding-top: 80px;

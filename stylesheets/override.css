@@ -47,38 +47,133 @@ header #header .give a:hover, header #header.white-header .give a:hover {
   color: white; }
 
 /*Donate Landing Page redesign*/
-.page-node-1589 .blurb p {
-  font-family: "Lato";
-  font-size: 45px;
-  color: #fff;
-  padding-left: 90px;
-  padding-bottom: 22px;
-  text-shadow: 1px 2px 2px #000;
-  font-weight: bold; }
+.page-node-1589 .donation-wrapper {
+  text-align: center;
+  color: white;
+  background-image: url(https://carnegiescience.edu/sites/default/files/donate/lake.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative; }
+  .page-node-1589 .donation-wrapper .textBox {
+    top: 10%;
+    width: 50%;
+    position: relative;
+    margin: 0 auto;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -moz-box-shadow: rgba(58, 58, 58, 0.5) 0 0 10px;
+    -webkit-box-shadow: rgba(58, 58, 58, 0.5) 0 0 10px;
+    box-shadow: rgba(58, 58, 58, 0.5) 0 0 10px;
+    background: rgba(104, 104, 104, 0.9);
+    padding: 30px;
+    text-align: center; }
+    .page-node-1589 .donation-wrapper .textBox p {
+      font-family: "Lato";
+      font-size: 20px;
+      color: #fff;
+      font-weight: bold; }
+    .page-node-1589 .donation-wrapper .textBox h1 {
+      text-shadow: 1px 2px 2px #000;
+      font-size: 4em;
+      padding-bottom: 10px; }
+      @media screen and (max-width: 768px) {
+        .page-node-1589 .donation-wrapper .textBox h1 {
+          font-size: 2em; } }
+    .page-node-1589 .donation-wrapper .textBox h2 {
+      padding-bottom: 30px; }
+      @media screen and (max-width: 768px) {
+        .page-node-1589 .donation-wrapper .textBox h2 {
+          font-size: 1em; } }
+    .page-node-1589 .donation-wrapper .textBox .btn {
+      margin-top: 30px; }
+    .page-node-1589 .donation-wrapper .textBox .select {
+      position: relative;
+      display: inline-block;
+      margin-bottom: 15px;
+      max-width: 100%; }
+      .page-node-1589 .donation-wrapper .textBox .select:after {
+        content: "";
+        position: absolute;
+        right: 10px;
+        top: 37%;
+        width: 0;
+        height: 0;
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-top: 12px solid #333;
+        pointer-events: none; }
+      .page-node-1589 .donation-wrapper .textBox .select #department {
+        font-size: 1.2em;
+        max-width: 100%;
+        cursor: pointer;
+        padding: 10px 30px 10px 15px;
+        outline: 0;
+        border: 0;
+        border-radius: 0;
+        background: #e6e6e6;
+        color: #716F73;
+        /* Remove default arrow*/
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -ms-appearance: none;
+        -o-appearance: none;
+        appearance: none; }
+        .page-node-1589 .donation-wrapper .textBox .select #department:hover, .page-node-1589 .donation-wrapper .textBox .select #departmentfocus {
+          color: #000;
+          background: #ccc; }
+        .page-node-1589 .donation-wrapper .textBox .select #department option:hover, .page-node-1589 .donation-wrapper .textBox .select #department option:focus {
+          color: #000;
+          background: #ccc;
+          cursor: pointer; }
+        .page-node-1589 .donation-wrapper .textBox .select #department::-ms-expand {
+          display: none; }
+        @media screen and (max-width: 768px) {
+          .page-node-1589 .donation-wrapper .textBox .select #department {
+            font-size: 12px; } }
+    .page-node-1589 .donation-wrapper .textBox .amount #custom_amount {
+      font-size: 1.5em;
+      display: none; }
+    .page-node-1589 .donation-wrapper .textBox .amount #other:checked + label + input {
+      display: inline; }
+    .page-node-1589 .donation-wrapper .textBox .amount input[type="radio"] {
+      display: none; }
+      .page-node-1589 .donation-wrapper .textBox .amount input[type="radio"]:checked + label {
+        background-color: #fff;
+        color: #716F73;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 20px 0 rgba(0, 0, 0, 0.8); }
+    .page-node-1589 .donation-wrapper .textBox .amount label {
+      padding: 15px 0;
+      background-color: #5eb6cd;
+      margin: 0 10px 20px 0;
+      width: 100px; }
+      .page-node-1589 .donation-wrapper .textBox .amount label:hover {
+        cursor: pointer;
+        background-color: #fff;
+        color: #716F73;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 2px 20px 0 rgba(0, 0, 0, 0.8); }
+    @media screen and (max-width: 500px) {
+      .page-node-1589 .donation-wrapper .textBox .recurrence span {
+        display: block;
+        text-align: left; } }
+    .page-node-1589 .donation-wrapper .textBox .recurrence label {
+      font-size: 16px; }
+    .page-node-1589 .donation-wrapper .textBox .donate-now {
+      background: #ff643a;
+      font-size: 1.2em;
+      color: white;
+      max-width: 100%; }
+      @media screen and (max-width: 768px) {
+        .page-node-1589 .donation-wrapper .textBox .donate-now {
+          font-size: 16px; } }
 .page-node-1589 #page {
-  border-right: 1px solid #bbb;
-  border-bottom: 3px solid #163671;
-  border-left: 1px solid #bbb;
   background-color: #ffffff;
   padding: 0; }
 .page-node-1589 #page-wrapper {
   background: #dadada; }
-.page-node-1589 .blurb2 label {
-  font-size: 45px;
-  color: white;
-  padding: 0 90px 20px;
-  border-bottom: 3px solid white; }
-.page-node-1589 .blurb2 p {
-  margin-top: 23px;
-  font-size: 25px;
-  line-height: 1.5;
-  font-weight: bold; }
 .page-node-1589 p {
   padding: 0; }
-.page-node-1589 section#main-wrapper {
-  float: none; }
-.page-node-1589 .row {
-  margin-bottom: 20px; }
 .page-node-1589 #banner {
   background: none; }
 .page-node-1589 #social-bar, .page-node-1589 #banner {
@@ -137,9 +232,6 @@ header #header .give a:hover, header #header.white-header .give a:hover {
 @media screen and (min-width: 1061px) {
   .page-node-1589 header #header.white-header #pull {
     display: none; } }
-@media screen and (max-width: 530px) {
-  .blurb p {
-    font-size: 30px; } }
 .support {
   position: absolute;
   bottom: 100px;
@@ -163,22 +255,10 @@ header #header ul.mobile-menu li a:hover {
 .one-half.col-md-6 p {
   width: 80%; }
 
-.textBox {
-  display: inline-block;
-  margin-top: 110px;
-  margin-bottom: 60px; }
-
-@media screen and (max-width: 670px) {
-  .page-node-1589 .blurb p {
-    padding-left: 0;
-    font-size: 30px; } }
 @media screen and (max-width: 470px) {
   .page-node-1589 .btn.btn-default.btn-danger, .buttonWrap {
     float: none;
     margin-top: 0; }
-
-  .textBox {
-    margin: 0; }
 
   .textWrapper {
     padding-top: 80px; } }
@@ -388,9 +468,8 @@ header #header .social-media a {
   background: url(../images/bg_direction_nav.png) no-repeat 0 0;
   width: 30px; }
 .front .md-arrow-right {
-  background: url(../images/bg_direction_nav.png) no-repeat 0 0;
-  width: 30px;
-  background-position: 100% 0; }
+  background: url(../images/bg_direction_nav.png) no-repeat 100% 0;
+  width: 30px; }
 
 @media screen and (max-width: 1060px) {
   .page-node-1668 header #header.white-header a {
