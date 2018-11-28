@@ -9,10 +9,22 @@
     background-repeat: no-repeat;
     height:100vh;
     position: relative;
+    a {
+      &.modal-trigger {
+        padding-top: 10px;
+        cursor: pointer;
+        display: block;
+        margin: 0 auto;
+        text-decoration: underline;
+      }
+    }
     //donation text block
     .textBox {
       top: 10%;
       width: 50%;
+      @media screen and (max-width: 500px) {
+        width: 90%;
+      }
       position: relative;
       margin: 0 auto;
       -moz-border-radius: 4px;
@@ -53,6 +65,7 @@
         display: inline-block;
         margin-bottom: 15px;
         max-width: 100%;
+        //custom select arrow
         &:after {
           content: "";
           position: absolute;
@@ -60,9 +73,9 @@
           top: 37%;
           width: 0;
           height: 0;
-          border-left: 8px solid transparent;
-          border-right: 8px solid transparent;
-          border-top: 12px solid #333;
+          border-left: 6px solid transparent;
+          border-right: 6px solid transparent;
+          border-top: 8px solid #333;
           pointer-events: none;
         }
         #department {
@@ -121,6 +134,7 @@
           background-color: #5eb6cd;
           margin: 0 10px 20px 0;
           width: 100px;
+          font-size: 18px;
           &:hover {
             cursor: pointer;
             background-color: #fff;
@@ -151,6 +165,33 @@
           font-size: 16px;
         }
       }
+    }
+  }
+  .contact {
+    .textWrapper {
+      padding-top: 4em;
+    }
+    text-align: center;
+    color: white;
+    background-image: url(https://carnegiescience.edu/sites/default/files/donate/green1.jpg);
+    background-image: url(../images/bc1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:600px;
+    label {
+      font-size: 45px;
+      color: white;
+      padding: 0 90px 20px;
+      border-bottom: 3px solid white;
+      @media screen and (max-width: 470px) {
+        font-size: 28px;
+      }
+    }
+    p {
+      margin-top: 23px;
+      font-size: 25px;
+      line-height: 1.5;
+      font-weight: bold;
     }
   }
   #page {

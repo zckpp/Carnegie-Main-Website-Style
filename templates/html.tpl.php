@@ -53,6 +53,7 @@
   <meta name="author" content="Carnegie Science">
   <?php print $head; ?>
   <title><?php print $head_title; ?></title>
+  <link href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
   <?php print $styles; ?>
   <?php print $scripts; ?>
   <link href='//fonts.googleapis.com/css?family=Roboto+Slab:400,300' rel='stylesheet' type='text/css'>

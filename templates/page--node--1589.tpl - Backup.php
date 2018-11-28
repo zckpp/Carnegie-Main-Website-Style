@@ -398,22 +398,6 @@
         </div></section> <!-- /#main, /#main-wrapper -->
 
 
-    <div class="blurb2">
-
-        <div class="textWrapper">
-            <div class="textBox">
-                <label>Contact Us</label>
-                <p>
-                    Advancement Office
-                    <br>202.939.1145
-                    <br>giving@carnegiescience.edu
-                </p>
-            </div>
-
-        </div>
-
-    </div>
-
     <?php if ($page['content_bottom']): ?>
         <section id ="content-bottom" class="clearfix">
             <div class="content-bottom">

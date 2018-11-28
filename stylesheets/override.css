@@ -46,6 +46,9 @@ header #header .give a:hover, header #header.white-header .give a:hover {
   border: none;
   color: white; }
 
+#mc_embed_signup div#mce-responses {
+  background: beige; }
+
 /*Donate Landing Page redesign*/
 .page-node-1589 .donation-wrapper {
   text-align: center;
@@ -55,6 +58,12 @@ header #header .give a:hover, header #header.white-header .give a:hover {
   background-repeat: no-repeat;
   height: 100vh;
   position: relative; }
+  .page-node-1589 .donation-wrapper a.modal-trigger {
+    padding-top: 10px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    text-decoration: underline; }
   .page-node-1589 .donation-wrapper .textBox {
     top: 10%;
     width: 50%;
@@ -69,6 +78,9 @@ header #header .give a:hover, header #header.white-header .give a:hover {
     background: rgba(104, 104, 104, 0.9);
     padding: 30px;
     text-align: center; }
+    @media screen and (max-width: 500px) {
+      .page-node-1589 .donation-wrapper .textBox {
+        width: 90%; } }
     .page-node-1589 .donation-wrapper .textBox p {
       font-family: "Lato";
       font-size: 20px;
@@ -100,9 +112,9 @@ header #header .give a:hover, header #header.white-header .give a:hover {
         top: 37%;
         width: 0;
         height: 0;
-        border-left: 8px solid transparent;
-        border-right: 8px solid transparent;
-        border-top: 12px solid #333;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-top: 8px solid #333;
         pointer-events: none; }
       .page-node-1589 .donation-wrapper .textBox .select #department {
         font-size: 1.2em;
@@ -147,7 +159,8 @@ header #header .give a:hover, header #header.white-header .give a:hover {
       padding: 15px 0;
       background-color: #5eb6cd;
       margin: 0 10px 20px 0;
-      width: 100px; }
+      width: 100px;
+      font-size: 18px; }
       .page-node-1589 .donation-wrapper .textBox .amount label:hover {
         cursor: pointer;
         background-color: #fff;
@@ -167,6 +180,29 @@ header #header .give a:hover, header #header.white-header .give a:hover {
       @media screen and (max-width: 768px) {
         .page-node-1589 .donation-wrapper .textBox .donate-now {
           font-size: 16px; } }
+.page-node-1589 .contact {
+  text-align: center;
+  color: white;
+  background-image: url(https://carnegiescience.edu/sites/default/files/donate/green1.jpg);
+  background-image: url(../images/bc1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 600px; }
+  .page-node-1589 .contact .textWrapper {
+    padding-top: 4em; }
+  .page-node-1589 .contact label {
+    font-size: 45px;
+    color: white;
+    padding: 0 90px 20px;
+    border-bottom: 3px solid white; }
+    @media screen and (max-width: 470px) {
+      .page-node-1589 .contact label {
+        font-size: 28px; } }
+  .page-node-1589 .contact p {
+    margin-top: 23px;
+    font-size: 25px;
+    line-height: 1.5;
+    font-weight: bold; }
 .page-node-1589 #page {
   background-color: #ffffff;
   padding: 0; }
