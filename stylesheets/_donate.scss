@@ -8,6 +8,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     height:100vh;
+    min-height:800px;
     position: relative;
     a {
       &.modal-trigger {
@@ -23,6 +24,7 @@
       top: 10%;
       width: 50%;
       @media screen and (max-width: 500px) {
+        top: 20px;
         width: 90%;
       }
       position: relative;

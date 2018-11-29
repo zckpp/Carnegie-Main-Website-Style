@@ -107,7 +107,7 @@
                     <!-- Custmo note field -->
                     <p>In Memory of: <input type="text" name="os0"></p>
                     <br>
-                    <p>In honor of: <input type="text" name="os1"></p>
+                    <p>In Honor of: <input type="text" name="os1"></p>
                     <p><Button class="donate-now btn" name="submit" type="submit">DONATE NOW</Button></p>
                     <!-- trigger modal -->
                     <a data-toggle="modal" data-target="#contactModal" class="modal-trigger">Have questions?</a>

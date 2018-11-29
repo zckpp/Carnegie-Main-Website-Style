@@ -57,6 +57,7 @@ header #header .give a:hover, header #header.white-header .give a:hover {
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
+  min-height: 800px;
   position: relative; }
   .page-node-1589 .donation-wrapper a.modal-trigger {
     padding-top: 10px;
@@ -80,6 +81,7 @@ header #header .give a:hover, header #header.white-header .give a:hover {
     text-align: center; }
     @media screen and (max-width: 500px) {
       .page-node-1589 .donation-wrapper .textBox {
+        top: 20px;
         width: 90%; } }
     .page-node-1589 .donation-wrapper .textBox p {
       font-family: "Lato";
