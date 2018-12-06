@@ -74,14 +74,14 @@
                     <!--Donate designation drop down-->
                     <div class="select">
                         <select name="item_name" id="department">
-                            <option value="The Carnegie Fund" selected>Our Greatest Needs</option>
-                            <option value="Carnegie Academy for Science Education">Carnegie Academy for Science Education</option>
-                            <option value="Carnegie Observatories">Carnegie Observatories</option>
-                            <option value="Department of Embryology">Department of Embryology</option>
-                            <option value="Department of Global Ecology">Department of Global Ecology</option>
-                            <option value="Department of Plant Biology">Department of Plant Biology</option>
-                            <option value="Department of Terrestrial Magnetism">Department of Terrestrial Magnetism</option>
-                            <option value="Geophysical Laboratory">Geophysical Laboratory</option>
+                            <option value="The Carnegie Fund" <?php if ($_GET['department'] == '') print 'selected'?>>Our Greatest Needs</option>
+                            <option value="Carnegie Academy for Science Education" <?php if ($_GET['department'] == 'case') print 'selected'?>>Carnegie Academy for Science Education</option>
+                            <option value="Carnegie Observatories" <?php if ($_GET['department'] == 'obs') print 'selected'?>>Carnegie Observatories</option>
+                            <option value="Department of Embryology" <?php if ($_GET['department'] == 'emb') print 'selected'?>>Department of Embryology</option>
+                            <option value="Department of Global Ecology" <?php if ($_GET['department'] == 'dge') print 'selected'?>>Department of Global Ecology</option>
+                            <option value="Department of Plant Biology" <?php if ($_GET['department'] == 'dpb') print 'selected'?>>Department of Plant Biology</option>
+                            <option value="Department of Terrestrial Magnetism" <?php if ($_GET['department'] == 'dtm') print 'selected'?>>Department of Terrestrial Magnetism</option>
+                            <option value="Geophysical Laboratory" <?php if ($_GET['department'] == 'gl') print 'selected'?>>Geophysical Laboratory</option>
                             <option value="Postdoctoral Support">Postdoctoral Support</option>
                         </select>
                     </div>

@@ -365,85 +365,85 @@ jQuery(function () {
     
 
     $(window).scroll(function (event) {
-        win_height = $(window).height() - 75;
-        image_height = $('.item-img img').height() - 75;
-        featured_item = image_height - $('.region-home-featured').height()-25;
-
-    	$('.explore-science a').css({
-            top: featured_height() - 85 ,
-        });
-        $('.region-home-featured').css({
-            top: featured_height() - $('.region-home-featured').height(),
-        });
+    //     win_height = $(window).height() - 75;
+    //     image_height = $('.item-img img').height() - 75;
+    //     featured_item = image_height - $('.region-home-featured').height()-25;
+    //
+    // 	$('.explore-science a').css({
+    //         top: featured_height() - 85 ,
+    //     });
+    //     $('.region-home-featured').css({
+    //         top: featured_height() - $('.region-home-featured').height(),
+    //     });
         var y = $(this).scrollTop();
         if (jQuery(this).scrollTop() > offset) {
             jQuery('.back-top').fadeIn(duration);
 	    //jQuery('#header').fadeOut(duration);
-	    
+
 	   } else {
             jQuery('.back-top').fadeOut(duration);
 	    //jQuery('#header').fadeIn(duration);
-            
-        }
-    	if (jQuery(this).scrollTop() < featured_height() - 300) {
-    	    $('.front #header').css({
-                    position: 'fixed',
-                    top: 0
-                });
-    	}
-    	else{
-    	$('.front #header').css({
-                    position: 'absolute',
-                    top: featured_height - 300
-                });
-    	}
-        if ($(window).width()>1050){
-            if (y >= top){
-              $('.banner-content').addClass('fixed');
-              if($('.not-front .banner-content a').data('size') == 'big')
-                {
-                    $('.not-front .banner-content a').data('size','small');
-                    $('.not-front .banner-content a').stop().animate({
-                        height:'65px'
-                    },600);
-                    $('.not-front .banner-content .block-menu-block a').stop().animate({
-                        height:'75px',
-                        
-                    },600);
-                }
-                if($('.front .banner-content a').data('size') == 'homebig')
-                {
-                    $('.front .banner-content a').data('size','homesmall');
-                    $('.front .banner-content a').stop().animate({
-                        height:'65px'
-                    },600);
-                }
-            } else {
-              $('.banner-content').removeClass('fixed');
-              if($('.not-front .banner-content a').data('size') == 'small')
-                {
-                    $('.not-front .banner-content a').data('size','big');
-                    $('.not-front .banner-content a').stop().animate({
-                        height:'90px'
-                    },600);
-                    $('.not-front .banner-content .block-menu-block a').stop().animate({
-                        height:'75px',
-                       
-                    },600);
-                }
-                if($('.front .banner-content a').data('size') == 'homesmall')
-                {
-                    $('.front .banner-content a').data('size','homebig');
-                    $('.front .banner-content a').stop().animate({
-                        height:'190px'
-                    },600);
-                }  
-            }
-        }
 
-        else {
-            $('.banner-content').removeClass('fixed');
         }
+    // 	if (jQuery(this).scrollTop() < featured_height() - 300) {
+    // 	    $('.front #header').css({
+    //                 position: 'fixed',
+    //                 top: 0
+    //             });
+    // 	}
+    // 	else{
+    // 	$('.front #header').css({
+    //                 position: 'absolute',
+    //                 top: featured_height - 300
+    //             });
+    // 	}
+    //     if ($(window).width()>1050){
+    //         if (y >= top){
+    //           $('.banner-content').addClass('fixed');
+    //           if($('.not-front .banner-content a').data('size') == 'big')
+    //             {
+    //                 $('.not-front .banner-content a').data('size','small');
+    //                 $('.not-front .banner-content a').stop().animate({
+    //                     height:'65px'
+    //                 },600);
+    //                 $('.not-front .banner-content .block-menu-block a').stop().animate({
+    //                     height:'75px',
+    //
+    //                 },600);
+    //             }
+    //             if($('.front .banner-content a').data('size') == 'homebig')
+    //             {
+    //                 $('.front .banner-content a').data('size','homesmall');
+    //                 $('.front .banner-content a').stop().animate({
+    //                     height:'65px'
+    //                 },600);
+    //             }
+    //         } else {
+    //           $('.banner-content').removeClass('fixed');
+    //           if($('.not-front .banner-content a').data('size') == 'small')
+    //             {
+    //                 $('.not-front .banner-content a').data('size','big');
+    //                 $('.not-front .banner-content a').stop().animate({
+    //                     height:'90px'
+    //                 },600);
+    //                 $('.not-front .banner-content .block-menu-block a').stop().animate({
+    //                     height:'75px',
+    //
+    //                 },600);
+    //             }
+    //             if($('.front .banner-content a').data('size') == 'homesmall')
+    //             {
+    //                 $('.front .banner-content a').data('size','homebig');
+    //                 $('.front .banner-content a').stop().animate({
+    //                     height:'190px'
+    //                 },600);
+    //             }
+    //         }
+    //     }
+    //
+    //     else {
+    //         $('.banner-content').removeClass('fixed');
+    //     }
     });
     //End of scroll function
 });
@@ -457,5 +457,4 @@ jQuery(function () {
         $('#node-1710>.content>.field').removeClass('field');
 
     });
-
 }(jQuery));

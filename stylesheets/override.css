@@ -704,4 +704,127 @@ div.social-share a {
 #footer-wrapper #footer .social-media {
   margin-right: 100px; }
 
+.not-front #page-wrapper header #header {
+  padding: 0 0 10px; }
+.not-front #page-wrapper #banner {
+  background: none repeat scroll 0 0 #efedea; }
+  .not-front #page-wrapper #banner .banner .banner-second {
+    color: black;
+    margin: 30px 2% 0;
+    width: 96%; }
+    .not-front #page-wrapper #banner .banner .banner-second .banner-title {
+      background: none;
+      padding: 1px 75px 0 0; }
+      .not-front #page-wrapper #banner .banner .banner-second .banner-title h4 {
+        display: none; }
+    .not-front #page-wrapper #banner .banner .banner-second .social-media {
+      display: none; }
+  .not-front #page-wrapper #banner .banner .banner-content {
+    background: #163671;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); }
+    .not-front #page-wrapper #banner .banner .banner-content #block-menu-menu-explore-our-science h2 {
+      display: none; }
+    .not-front #page-wrapper #banner .banner .banner-content #block-menu-menu-explore-our-science .content {
+      width: 100%;
+      float: none; }
+      .not-front #page-wrapper #banner .banner .banner-content #block-menu-menu-explore-our-science .content ul {
+        box-shadow: none;
+        float: none;
+        text-align: center; }
+        .not-front #page-wrapper #banner .banner .banner-content #block-menu-menu-explore-our-science .content ul li {
+          float: none;
+          display: inline-block; }
+          .not-front #page-wrapper #banner .banner .banner-content #block-menu-menu-explore-our-science .content ul li a {
+            border-top: none;
+            box-shadow: none;
+            padding: 20px 12px;
+            width: auto;
+            height: auto;
+            display: block;
+            color: white; }
+            .not-front #page-wrapper #banner .banner .banner-content #block-menu-menu-explore-our-science .content ul li a:hover {
+              background: #5eb6cd;
+              text-decoration: none; }
+  .not-front #page-wrapper #banner .block-menu-block ul {
+    background: #163671;
+    text-align: center; }
+    .not-front #page-wrapper #banner .block-menu-block ul li {
+      display: inline-block;
+      width: auto;
+      float: none; }
+      .not-front #page-wrapper #banner .block-menu-block ul li a {
+        border: none;
+        box-shadow: none;
+        padding: 20px 12px;
+        color: white;
+        height: auto;
+        background: #163671; }
+        .not-front #page-wrapper #banner .block-menu-block ul li a:hover, .not-front #page-wrapper #banner .block-menu-block ul li a:active {
+          text-decoration: none;
+          color: white;
+          background: #5eb6cd; }
+      .not-front #page-wrapper #banner .block-menu-block ul li ul li {
+        width: 100%; }
+        .not-front #page-wrapper #banner .block-menu-block ul li ul li a {
+          width: 100%; }
+.not-front #page-wrapper .view .views-row {
+  box-shadow: 0px 0px 4px #aaa; }
+  .not-front #page-wrapper .view .views-row .item-flag a {
+    background-color: #163671; }
+.not-front #page-wrapper .view .views-exposed-form .views-exposed-widget {
+  padding: 0 1em 0 0; }
+  .not-front #page-wrapper .view .views-exposed-form .views-exposed-widget .form-submit {
+    background-color: #163671;
+    color: white; }
+    .not-front #page-wrapper .view .views-exposed-form .views-exposed-widget .form-submit:hover {
+      cursor: pointer; }
+.not-front #page-wrapper .view-events .views-row .views-field-title a {
+  color: #163671; }
+.not-front #page-wrapper .event-links .event-link.register-btn {
+  background: #163671; }
+  .not-front #page-wrapper .event-links .event-link.register-btn a:hover {
+    background: #5eb6cd; }
+.not-front #page-wrapper .event-category {
+  background-color: #163671; }
+.not-front #page-wrapper a:hover, .not-front #page-wrapper a.active, .not-front #page-wrapper a.active-trail {
+  color: #163671; }
+.not-front #page-wrapper #sidebar-left .sidebar-left-first {
+  border-top: 4px solid #163671;
+  box-shadow: 0px 0px 4px #aaa; }
+  .not-front #page-wrapper #sidebar-left .sidebar-left-first .block h2 {
+    display: none; }
+.not-front #page-wrapper #sidebar-right {
+  box-shadow: 0px 0px 4px #aaa; }
+  .not-front #page-wrapper #sidebar-right .block {
+    margin-bottom: 0;
+    background: white;
+    color: black; }
+  .not-front #page-wrapper #sidebar-right .view .views-row {
+    box-shadow: 0px 0px 1px #aaa; }
+  .not-front #page-wrapper #sidebar-right #block-nodeblock-48, .not-front #page-wrapper #sidebar-right #block-block-2 {
+    background: white;
+    color: black; }
+    .not-front #page-wrapper #sidebar-right #block-nodeblock-48 h2, .not-front #page-wrapper #sidebar-right #block-block-2 h2 {
+      background: none;
+      color: black;
+      padding-left: 0; }
+    .not-front #page-wrapper #sidebar-right #block-nodeblock-48 .field-name-body a, .not-front #page-wrapper #sidebar-right #block-nodeblock-48 ul li a, .not-front #page-wrapper #sidebar-right #block-block-2 .field-name-body a, .not-front #page-wrapper #sidebar-right #block-block-2 ul li a {
+      background: #163671;
+      color: white;
+      text-decoration: none; }
+      .not-front #page-wrapper #sidebar-right #block-nodeblock-48 .field-name-body a:hover, .not-front #page-wrapper #sidebar-right #block-nodeblock-48 ul li a:hover, .not-front #page-wrapper #sidebar-right #block-block-2 .field-name-body a:hover, .not-front #page-wrapper #sidebar-right #block-block-2 ul li a:hover {
+        background: #5eb6cd; }
+    .not-front #page-wrapper #sidebar-right #block-nodeblock-48 .node, .not-front #page-wrapper #sidebar-right #block-block-2 .node {
+      padding-bottom: 30px;
+      margin-bottom: 0; }
+
+#footer-wrapper #footer .back-top:hover {
+  background-color: #163671; }
+
+.page-node-6 .banner-second {
+  display: none; }
+
+#block-quicktabs-explore-carnegie-science {
+  display: none; }
+
 /*# sourceMappingURL=override.css.map */

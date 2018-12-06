@@ -1,0 +1,209 @@
+@import 'color';
+
+//not front
+.not-front {
+  #page-wrapper {
+    header #header {
+      padding: 0 0 10px;
+    }
+    #banner {
+      background: none repeat scroll 0 0 #efedea;
+      .banner {
+        .banner-second {
+          color: black;
+          margin: 30px 2% 0;
+          width: 96%;
+          .banner-title {
+            background: none;
+            padding: 1px 75px 0 0;
+            h4 {
+              display: none;
+            }
+          }
+          .social-media {
+            display: none;
+          }
+        }
+        //scientific departments top menu
+        .banner-content {
+          background: $carnegie-dark-blue;
+          box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+          #block-menu-menu-explore-our-science {
+            h2 {
+              display: none;
+            }
+            .content {
+              width: 100%;
+              float: none;
+              ul {
+                box-shadow: none;
+                float: none;
+                text-align: center;
+                li {
+                  float: none;
+                  display: inline-block;
+                  a {
+                    border-top: none;
+                    box-shadow: none;
+                    padding: 20px 12px;
+                    width: auto;
+                    height: auto;
+                    display: block;
+                    color: white;
+                    &:hover {
+                      background: $carnegie-light-blue;
+                      text-decoration: none;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      //event pages menu
+      .block-menu-block {
+        ul {
+          background: $carnegie-dark-blue;
+          text-align: center;
+          li {
+            display: inline-block;
+            width: auto;
+            float: none;
+            a {
+              border: none;
+              box-shadow: none;
+              padding: 20px 12px;
+              color: white;
+              height: auto;
+              background: $carnegie-dark-blue;
+              &:hover, &:active {
+                text-decoration: none;
+                color: white;
+                background: $carnegie-light-blue;
+              }
+            }
+            ul {
+              li {
+                width: 100%;
+                a {
+                  width: 100%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    //views
+    .view {
+      .views-row {
+        box-shadow: 0px 0px 4px #aaa;
+        //taxonomy tag
+        .item-flag a {
+          background-color: $carnegie-dark-blue;
+        }
+      }
+      //views filter
+      .views-exposed-form .views-exposed-widget {
+        padding: 0 1em 0 0;
+        .form-submit {
+          background-color: $carnegie-dark-blue;
+          color: white;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    //event views
+    .view-events {
+      .views-row {
+        .views-field-title {
+          a {
+            color: $carnegie-dark-blue;
+          }
+        }
+      }
+    }
+    .event-links {
+      .event-link.register-btn {
+        background: $carnegie-dark-blue;
+        a:hover {
+          background: $carnegie-light-blue;
+        }
+      }
+    }
+    .event-category {
+      background-color: $carnegie-dark-blue;
+    }
+    //a hover color
+    a:hover, a.active, a.active-trail {
+      color: $carnegie-dark-blue;
+    }
+    //sidebar
+    #sidebar-left {
+      .sidebar-left-first {
+        border-top: 4px solid $carnegie-dark-blue;
+        box-shadow: 0px 0px 4px #aaa;
+        .block {
+          h2 {
+            display: none;
+          }
+        }
+      }
+    }
+    #sidebar-right {
+      box-shadow: 0px 0px 4px #aaa;
+      .block {
+        margin-bottom: 0;
+        background: white;
+        color: black;
+      }
+      .view .views-row {
+        box-shadow: 0px 0px 1px #aaa;
+      }
+      #block-nodeblock-48, #block-block-2 {
+        background: white;
+        color: black;
+        h2 {
+          background: none;
+          color: black;
+          padding-left: 0;
+        }
+        .field-name-body a, ul li a {
+          background: $carnegie-dark-blue;
+          color: white;
+          text-decoration: none;
+          &:hover {
+            background: $carnegie-light-blue;
+          }
+        }
+        .node {
+          padding-bottom: 30px;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+//footer
+#footer-wrapper {
+  #footer {
+    .back-top:hover {
+      background-color: $carnegie-dark-blue;
+    }
+  }
+}
+
+//event page override
+.page-node-6 {
+  .banner-second {
+    display: none;
+  }
+}
+//hide bottom slider
+#block-quicktabs-explore-carnegie-science {
+  display: none;
+}

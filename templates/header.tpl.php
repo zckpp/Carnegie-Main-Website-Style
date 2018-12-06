@@ -75,7 +75,7 @@
         <?php if ($base) print '<img src="' . $base . '" />'; ?>
     <?php } ?>
      
-    <div class="banner-slider carnegie_container">
+    <div class="banner-slider">
       <div class="banner-content">
         <?php print render($page['banner']); ?>
       </div>
